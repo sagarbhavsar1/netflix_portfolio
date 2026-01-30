@@ -18,17 +18,17 @@ const NetflixTitle = () => {
     if (isClicked) {
       const timer = setTimeout(() => {
         navigate('/browse');
-      }, 4000);
+      }, 2000);
       return () => clearTimeout(timer);
     }
   }, [isClicked, navigate]);
 
   return (
     <div className="netflix-container" onClick={handlePlaySound}>
-      <img 
-        src={logoImage} 
-        alt="Custom Logo" 
-        className={`netflix-logo ${isClicked ? 'animate' : ''}`} 
+      <img
+        src={logoImage}
+        alt="Custom Logo"
+        className={`netflix-logo ${isClicked ? 'animate' : ''}`}
       />
     </div>
   );
