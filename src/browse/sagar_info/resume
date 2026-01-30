@@ -1,0 +1,46 @@
+SAGAR BHAVSAR
+New York, NY  551-375-9340 # sb9568@stern.nyu.edu ï linkedin.com/in/sagarbhavsar1/ § Github  Portfolio Website Education
+• New York University (Stern School of Business, Courant School of Mathematics) New York, NY Masters in Information Systems Sept 2023 - May 2025 Courses: Databases for Business Analytics (Teaching Assistant), Machine Learning (Teaching Assistant), Data Structures and Algorithms, Predictive Analytics, Computer Networks, Data Science for Business, Finance, AI, Marketing, DevOps, Leadership
+• SRM Institute Of Science and Technology Chennai, India Bachelor of Science in Computer Science Engineering Aug 2019 - Jun 2023
+Skills
+Programming & Analysis : Python (Pandas, NumPy, SciPy, Matplotlib), SQL (CTEs, window functions), R, Java, MATLAB, Scikit-learn, PyTorch, TensorFlow, JSON, NodeJS, CUDA, NLTK, SpaCy, Django, Flask
+Skills/ Tools: Hadoop, Spark, Docker, Kubernetes, Git, Github Actions (CI/CD), Linux, REST APIs, MySQL, PostgreSQL, Oracle DB, BigQuery, Snowflake, Tableau, Power BI, Looker Studio, Excel, Jira, Zenhub, RapidMiner
+Cloud Platforms: GCP, Vertex AI, AWS (Athena, Glue, S3), Azure Data Factory, Palantir Foundry Experience
+• Julius New York, NY Data Scientist & Analyst Oct 2025 - Present
+◦ : Conducted labor market intelligence analysis within the energy and high-growth industries, leveraging job posting data to identify emerging skill trends and workforce patterns for data-driven decision making.
+◦ : Built and scripted an end-to-end clustering workflow using BigQuery, Vertex AI (vector embeddings), and Python (UMAP, HDBSCAN) to group 2M+ jobs by semantic similarity, uncovering relationships across evolving technical roles.
+◦ : Engineered data extraction pipelines from BigQuery and optimized storage on Google Cloud Storage, improving data reliability and processing efficiency during embedding and clustering stages.
+◦ : Built and refined Looker Studio dashboards to communicate findings effectively, enabling stakeholders to explore labor demand insights and identify key growth areas across industries.
+• NYU Stern New York, NY
+Data Engineer Jan 2024 - May 2025
+◦ : Handled 500K+ PHI records daily by implementing batch processing pipelines through Python (Pandas, NumPy) and SQL, ensuring compliance with data integrity and privacy.
+◦ : Spearheaded ingestion of 10+ data sources (CSV, JSON, REST APIs) by developing schema mapping templates and data quality thresholds, improving analytics team’s data accessibility by 40%.
+◦ : Containerized data workloads using Docker and Kubernetes, establishing GitOps workflows with ArgoCD that reduced deployment failures by 65% through automated schema validation.
+• EasyTransfer (Cashfree Payments) New York, NY Analytics Intern May 2024 - Aug 2024
+◦ : Implemented ensemble classification models using Python to identify high-value customer segments, implemented A/B
+testing framework that increased email CTR by 15% through optimal subject line selection.
+◦ : User Behavior Analysis: Developed a data pipeline using Google Analytics BigQuery integration and Python to track
+and analyze user behavior, processing 1M+ daily events to identify key trends and insights.
+◦ : Conversion Funnel Optimization: Employed Markov chain analysis to identify dropoffs in the conversion funnel,
+implementing UI improvements that reduced bounce rates by 20%.
+• SMS Group (Esmech Equipment) Mumbai, India Data Analyst Jan 2022 - Jan 2023
+◦ : Analyzed years of sales data across multiple regions in India, collaborating with sales, marketing, & IT teams in agile requirement gathering sessions to identify seasonal trends & regional sales performance for market expansion strategies.
+◦ : Managed Azure SQL database queries and optimized ETL pipelines using Azure Data Factory, integrating multiple data sources like CRM and ERP systems to ensure clean, reliable, and timely sales data for analysis.
+◦ : Conducted cohort analysis and time-series analysis to uncover customer buying patterns and seasonal demand fluctuations, improving forecasting accuracy by 17% & enabling targeted marketing campaigns in emerging markets.
+◦ : Performed data validation and implemented automated ETL workflows in Azure Data Factory, reducing data processing time by 30% while ensuring accuracy and consistency of multi-source sales datasets.
+Projects and Publications
+• Cadillac Website Enhancement (Chatbot, Image Processing, Web Development): Enhanced the NCDB website with a chatbot using Google Flan-T5 and ChromaDB, handling 500+ daily user queries. Built an image-to-text feature using a ResNet18 CNN model trained on 60K+ car images. Deployed on AWS (EC2, S3, EFS), reducing training time by 50%.
+• Image De-hazer System (Deep Learning, CNN, Computer Vision): Designed a CNN model for image upscaling and dehazing, achieving 90% novel accuracy. Published findings in IEEE and presented at ICECONF’23.
+Tech Stack: Python, TensorFlow, OpenCV, VGG16, RESIDE Dataset. Github link
+• PDF to Podcast Converter (NLP, LLMs, Text-to-Speech, Full-Stack): Developed a website that converts a PDF document into a podcast, with 2 hosts discussing about the PDF. Implemented intelligent text chunking, pdf-parsing, audio generation methods, and API rate limits handling. Deployed the website for global users, all at 0 running costs. Github Link
+        
+Certifications and virtual internships
+ • Palantir: Foundry and AIP Builders Foundation
+• (BCG) Boston Consulting Group: - Data Science Internship - Jul’24
+• ICECONF’23: Research Paper Publication Awards - Jan’23
+• Certification Courses: C, C++, Python, SQL, Google Analytics, Nvidia RAG Agents, CS50
+Leadership and Extracurricular
+• Course Supervisor & Teaching Fellow (NYU Stern): For the courses ’Databases for Business Analytics’,’ Business Communication’ and ’ML for managers’ teaching the MBA, and Executive-MBA cohort at NYU.
+• SRM Data Science Club - Vice President: Organized seminars and hackathons consisting of 300+ students, promoting data science education and community engagement.
+• National-Level Table Tennis Player: Achieved 100+ awards to date, demonstrating high discipline and teamwork skills.
+ 
