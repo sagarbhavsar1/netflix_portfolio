@@ -1,0 +1,188 @@
+﻿SAGAR BHAVSAR
+
+
+Contact email: sb9568@stern.nyu.edu
+www.linkedin.com/in/ sagarbhavsar1 (LinkedIn) 
+sagarbhavsar.carrd.co/ (Personal)
+Top Skills:
+- Google Cloud Platform (GCP) 
+-Retrieval-Augmented Generation (RAG) 
+-python
+Languages spoken: 
+-Marathi (Native)
+-English (Native)
+-Hindi (Native)
+
+
+Certifications: 
+-Building RAG Systems 
+-Certified Ethical Hacker (CEH) 
+-Linux and Data analytics 
+-Google Analytics Foundry 
+-AIP Builder Foundations (Palantir)
+-data science virtual internship with BCG
+Publications: 
+1)Graph Neural Networks: Image Dehazing Using Enhanced Feature Extraction Techniques in Deep Learning 2)(Contributor) The Geographic Association of Multiple Sclerosis and Amyotrophic Lateral Sclerosis
+
+Sagar Bhavsar
+Data Scientist | AI/ML (RAG, LLMs) | MS in Information Systems @
+NYU | Python, SQL, AWS, GCP
+New York, New York, United States
+Summary
+I believe in the power of data and technology to transform ideas
+into impactful solutions. My journey has been shaped by a love for
+problem-solving, analytics, and a knack for Ai.
+I’m Sagar, a recent Master’s graduate from NYU Stern and Courant,
+with a background in Computer Science and Information Systems.
+With over 2 years of experience building intelligent systems that
+bridge business and technology, with a focus on data science, AI,
+and full stack- real-time analytics.
+Currently at Julius as a data Scientist, where I analyze large scale
+labour market datasets and design clustering workflows on more
+than 2M datapoints using BigQuery, Vertex AI, and Python based
+embedding methods. I also create dashboards on Looker Studio that
+help teams understand emerging skills and industry trends.
+My past experience spans across projects involving computer
+vision, deep learning, and financial NLP. I’ve architected chatbots,
+enhanced image-processing pipelines, and built AI systems that turn
+raw data into strategic insights.
+Outside of tech, I’ve competed in table tennis at the national level,
+a decade-long pursuit that’s sharpened my focus, adaptability, and
+ability to perform under pressure.
+Let’s connect if you're building something that needs clean data,
+smart systems, and someone who’s excited to contribute.
+Get in Touch: sb9568@stern.nyu.edu Skills and Tools:-Programming and Dev : Python (Pandas, NumPy, SciPy, Matplotlib), SQL (CTEs, window functions), R, Java,MATLAB, Scikitlearn, PyTorch, TensorFlow, NodeJS, CUDA, NLTK, SpaCy, Django, Flask, FastAPI, RESTAPI -Tools: Hadoop, Spark, Docker, Kubernetes, Git, Linux, REST APIs, MySQL, PostgreSQL, Oracle DB, BigQuery,Snowflake, Tableau, Power BI, Looker Studio, Excel, Jira, Zenhub, RapidMiner -Cloud Platforms: GCP, Vertex AI, AWS (Athena, Glue, S3), Azure Data Factory, Palantir Foundry
+Experience
+1- Julius Data Scientist and Analyst October 2025 - Present (4 months) New York, NY
+- Conduct labor market intelligence analysis within the energy and high-growth industries, leveraging job posting data to identify emerging skill trends and workforce patterns for data-driven decision making. - Design and implement an end-to-end NLP clustering workflow using BigQuery, Vertex AI (vector embeddings), and Python (UMAP, HDBSCAN) to group 2M+ jobs by semantic similarity, uncovering relationships across evolving roles. - Engineer data extraction pipelines from BigQuery and optimize storage on Google Cloud Storage. - Build and refine Looker Studio dashboards to communicate findings effectively, enabling stakeholders to explore labor demand insights and identify key growth areas across industries.
+2- RANGR Data Palantir Foundry Engineer (Software Engineer) June 2025 - September 2025 (4 months)
+Designed, developed, and demoed a fully functional CRM application in Palantir Foundry as part of a project. Showcased end-to-end capabilities in data modeling, ontology design, AI integration, and application development, while collaborating with Foundry engineers during live review sessions. • Data Architecture: Modeled and linked Companies, People, and B2B/B2C Opportunities datasets using Ontology Manager, creating a unified, queryable entity graph.
+• ETL Pipelines: Built and optimized data pipelines for ingestion, transformation, and aggregation of customer and opportunity data to enable automated reporting and metrics.
+• Application Development: Designed interactive Workshop pages for managing company and client information, tracking B2B/B2C deal stages, and visualizing sales performance via dynamic dashboards and leaderboards.
+• AI Integration: Embedded AIP Assist and a custom GPT-powered chatbot that interprets natural-language queries about the CRM’s data and generates contextual, AI-driven insights and follow-up messages.
+• Collaboration & Iteration: Worked closely with Palantir engineers during a live demo session to review the application, implement feedback, and enhance features in real time for production readiness.
+• UI/UX & Functionality: Delivered a clean, user-friendly CRM interface combining analytical intelligence with operational interactivity, built entirely within Foundry’s native environment.
+3- OnDeck Data Analyst (Risk, Finance) October 2024 - September 2025 (1 year)
+- Collaborated cross-functionally in agile sprints on a borrower segmentation project, identifying high-risk and high-value customers by analyzing transaction data, supporting personalized lending strategies and improved underwriting processes for OnDeck.
+- Utilized advanced SQL with window functions and CTEs on AWS Athena to query Parquet loan datasets in S3, improving ETL workflows and boosting query performance by 15% for risk and operations teams.
+- Conducted cohort and trend analysis revealing an 11% rise in mobile wallet usage among millennials over months, enabling informed decisions on digital repayment strategies and enhancing borrower engagement efforts. - Used Python (NumPy, Pandas, SciPy) for time series analysis, hypothesis testing, and correlation studies to validate borrower behavior patterns without machine learning, delivering actionable insights for business strategy.
+- Built Power BI dashboards with DAX measures, slicers, and drill-throughs; automated data validation using AWS Glue to reduce ingestion errors by 21%, cutting manual reporting time by 30% and supporting targeted campaigns.
+4-NYU Stern School of Business 1 year 4 months
+Teaching Assistant ( Analytics and Machine Learning for Managers, Executive-MBA) September 2024 - May 2025 (9 months) New York, New York, United States
+Teaching Assistant for the 'Analytics and Machine Learning for Managers' course instructed by Prof. and Dean (UG) Rohit Deo for the Executive-MBA (EMBA) Cohort at NYU Stern.
+Research Assistant (Data Engineer) February 2024 - January 2025 (1 year) New York, New York, United States
+• Assisting Professor Melissa Schilling in advanced healthcare research on ALS (Amyotrophic Lateral Sclerosis).
+• Conducting comprehensive data restructuring, analysis, and feature engineering using Python (Pandas, NumPy), Tableau, and Excel for multiple large-scale datasets, each with over 100K+ records, including epidemiological studies on ALS.
+• Summarizing findings from 50+ research papers to extract critical insights that contribute to the understanding of ALS and healthcare data trends.
+• Collaborating on projects that explore the economic and medical implications of ALS, aiming to identify patterns and trends that could influence healthcare strategies.
+Teaching Fellow (Business Communication, MBA Cohort) September 2024 - November 2024 (3 months) New York, New York, United States
+Teaching Assistant for Professor David Purdy's Business Communication course for the NYU Stern MBA Cohort. Teaching Assistant (Databases for Business Analytics) May 2024 - August 2024 (4 months) New York, New York, United States
+Teaching Assistant for the course 'Databases for Business Analytics' for a class of 40 MSBA students under Prof. Panos Ipeirotis at NYU Stern.
+5-EasyTransfer Marketing Analytics Intern May 2024 - July 2024 (3 months) New York, United States
+◦ Marketing Campaign using Predictive Modelling: Analyzed customer data using Machine Learning techniques to identify key demographics and behaviors, resulting in a 15% increase in campaign engagement metrics. Conducted A/B testing on email campaigns to optimize subject lines and content, improving open rates and click-through rates.
+◦ Website Traffic Optimization: Leveraged Google Analytics and Python to track and analyze website traffic and user behavior. Implemented data-driven strategies to identify areas for improvement, resulting in a 20% drop in bounce rate.
+◦ Campaign Presentation to Board: Prepared and delivered a detailed presentation to the company’s executive board, showcasing campaign results, data insights, and actionable recommendations for future marketing strategies, receiving positive feedback and support for continued initiatives.
+6-SRM Institute of Science and Technology (SRMIST) Research Assistant (Deep Learning, Artificial Intelligence) July 2022 - May 2023 (11 months) Chennai, Tamil Nadu, India
+• Collaborated with a distinguished professor in conducting two pioneering research papers within the field of deep learning and neural networks, with a specific focus on image processing and image dehazing.
+• Meticulously analyzed a vast dataset of 30k samples, employing various preprocessing steps and the most accurate and efficient model (VGG16) to upscale the resulting image.
+• Achieved an overall accuracy of 81% based on two evaluation matrix (SSIN and PSNR values) that compare the original hazy image with the de-hazed output image. 
+
+7- Esmech Equipment Private Limited� Data Analyst January 2022 - January 2023 (1 year 1 month) Mumbai, Maharashtra, India
+◦ Collected and analyzed years of sales data across multiple regions in India, collaborating with sales, marketing, & IT teams in agile requirement gathering sessions to identify trends, seasonal patterns, & regional sales performance for market expansion strategies. ◦ Managed SQL database queries and optimized ETL pipelines using Azure Data Factory and Azure SQL Database, integrating multiple data sources like CRM and ERP systems to ensure clean, reliable, and timely sales data for analysis. ◦ Conducted cohort analysis and time-series analysis to uncover customer buying patterns and seasonal demand fluctuations, improving forecasting accuracy by 17% & enabling targeted marketing campaigns in emerging markets. ◦ Utilized Python libraries (Pandas,NumPy, matplotlib) to perform data cleaning, aggregation, & statistical analysis, enabling in-depth segmentation of customers by industry, company size, and purchase frequency for tailored sales strategies. ◦ Applied R programming for cluster analysis using K-means to segment customers and identify high-potential market segments, resulting in a 21% increase in focused sales efforts and improved resource allocation. ◦ Performed data validation and implemented automated ETL workflows in Azure Data Factory, reducing data processing time by 30% while ensuring accuracy and consistency of multi-source sales datasets. ◦ Developed interactive Tableau dashboards featuring filter actions and parameter controls, using Level of Detail (LOD) expressions to provide granular sales performance metrics by region and customer segment, enhancing executive decision- making and forecasting by 23%.
+
+
+8- HighRadius Data Science Intern January 2022 - April 2022 (4 months) United States
+◦ AI-Powered FinTech Application Development: Developed a full-stack invoice management system using ReactJS (frontend), Java Servlets (backend), and SQL (database), integrating machine learning to predict payment dates and categorize invoices, reducing overdue payments by 15%. ◦ Financial Predictive Modeling: Built and deployed XGBoost models to predict invoice clearance dates, achieving 92% accuracy by analyzing 1M+ historical transactions and optimizing hyperparameters using grid search.
+◦ Data-Driven Sales Strategy: Analyzed ML insights to provide actionable recommendations for sales teams, contributing to a 17% increase in client acquisition through targeted outreach strategies.
+9- Aaruush, SRM University Event Coordinator August 2019 - March 2020 (8 months) Chennai, Tamil Nadu, India
+Education
+1-New York University Master of Science - MS, Information Systems · (August 2023 - May 2025)
+2-SRM Institute of Science and Technology (SRMIST) Bachelor of Technology, Computer Science and Business Systems
+3-Pace Junior Science College Mumbai 
+4-Smt. Sulochanadevi Singhania School, Mumbai  · (July 2005 - July 2017)
+
+
+
+SKILLS:
+                                                   
+                        
+                                
+                                        
+*                                                                                                          
+Programming & Analysis : Python (Pandas, NumPy, SciPy, Matplotlib), SQL (CTEs, window functions), R, Java, MATLAB, Scikit-learn, PyTorch, TensorFlow, JSON, NodeJS, CUDA, NLTK, SpaCy, Django, Flask
+Skills/ Tools: Hadoop, Spark, Docker, Kubernetes, Git, Github Actions (CI/CD), Linux, REST APIs, MySQL, PostgreSQL, Oracle DB, BigQuery, Snowflake, Tableau, Power BI, Looker Studio, Excel, Jira, Zenhub, RapidMiner
+                                                        
+Cloud Platforms: GCP, Vertex AI, AWS (Athena, Glue, S3), Azure Data Factory, Palantir Foundry 
+                                                 
+                                                                         
+                        
+                
+PROJECTS:
+                                                   
+                        
+                                
+                                        
+   *                                                                                                          
+Cadillac Website Enhancement (Chatbot, Image Processing, Web Development): Enhanced the NCDB website with a chatbot using Google Flan-T5 and ChromaDB, handling 500+ daily user queries. Built an image-to-text feature using a ResNet18 CNN model trained on 60K+ car images. Deployed on AWS (EC2, S3, EFS), reducing training time by 50%.
+                                                
+   *                                                                                                          
+Image De-hazer System (Deep Learning, CNN, Computer Vision): Designed a CNN model for image upscaling and dehazing, achieving 90% novel accuracy. Published findings in IEEE and presented at ICECONF’23.
+Tech Stack: Python, TensorFlow, OpenCV, VGG16, RESIDE Dataset. Github link
+                                                
+   *                                                                                                          
+PDF to Podcast Converter (NLP, LLMs, Text-to-Speech, Full-Stack): Developed a website that converts a PDF document into a podcast, with 2 hosts discussing about the PDF. Implemented intelligent text chunking, pdf-parsing, audio generation methods, and API rate limits handling. Deployed the website for global users, all at 0 running costs. Github Link 
+                                                 
+                                                                         
+                        
+      *                                                                  
+Domino's Pizza Brand Strategy: A case study
+
+
+      *       * Associated with New York University
+      * This was my Fall 2024 project for the NYU Stern Marketing Course taught by Professor Michelle Greenwald. The report provides a detailed analysis of Domino’s brand and marketing strategies, showcasing how the company has leveraged innovative approaches and effective branding to become a global leader in pizza delivery and a dominant player in the fast-food industry.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      * ONLINE BLOOD BANK MANAGEMENT SYSTEM
+- This software system is an online blood bank management system that helps in managing various blood bank operations effectively. The project consists of a central repository containing various blood deposits available along with its details.
+- This online system is made using Python(tkinter) and SQLite3.
+- This project was built in my first year of undergraduate and it simulates Blood Banks by keeping a record of blood doners, depositories and blood recipients.
+
+
+
+         *          COVID 19 CASES ANALYSIS IN INDIA (GOVT OF INDIA)
+
+            *             * - The india-wide data on covid 19 cases were proccured from data.gov.in website.
+            * - The CSV file was pre-processed using various python libraries.
+            * - The refined data was then analysed and various inferences have been made along with visualizations.
+
+
+HOBBIES, INTERESTS, FUN FACTS:
+
+Hobbies:
+1-I am a national level table tennis player, I have won more than 100+ certificates and over 20 trophies and counting.
+I was in the NYU A team for table tennis and was the captain of my school and university team, demonstrating high discipline and teamwork skills. 
+
+2- I love building things, reading about space, cosmos, watching netflix, hanging out with friends and working on new projects and adventures, going out, exploring, cooking!
+
+
+FUN FACTS: - Blue is my fav color, Sagar means ocean/ sea literally, thats why i love water(i feel like its my closest element, and I love blue color)
+
+
+
+OTHER QUESTIONS OR ANYTHING THAT A RECRUITER PROBABLY MIGHT ASK:
+
+- visa status?  I’m currently on F-1 OPT and can work in the US for up to 3 years without sponsorship (until July 2028); after that, I would need H-1B sponsorship to continue working. (Transfer)
+
+How many years of experience do i have: 3

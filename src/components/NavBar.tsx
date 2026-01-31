@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { FaHome, FaBriefcase, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa'; // Import icons
+import { FaHome, FaBriefcase, FaTools, FaProjectDiagram, FaEnvelope, FaLinkedin, FaGithub, FaMedium, FaHackerrank } from 'react-icons/fa';
 import './Navbar.css';
 import netflixLogo from '../images/logo-2.png';
 import blueImage from '../images/blue.png';
@@ -45,6 +45,24 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
         <div className="navbar-right">
+          {/* Social Media Icons */}
+          <div className="social-icons">
+            <a href="https://www.linkedin.com/in/sagarbhavsar1/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/sagarbhavsar1" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <FaGithub />
+            </a>
+            <a href="https://medium.com/@sagarbhavsar2001" target="_blank" rel="noopener noreferrer" title="Medium">
+              <FaMedium />
+            </a>
+            <a href="https://www.hackerrank.com/sagarbhavsar2001" target="_blank" rel="noopener noreferrer" title="HackerRank">
+              <FaHackerrank />
+            </a>
+            <a href="mailto:sb9568@nyu.edu" title="Email Me">
+              <FaEnvelope />
+            </a>
+          </div>
           {/* Hamburger menu for mobile */}
           <div className="hamburger" onClick={toggleSidebar}>
             <div></div>

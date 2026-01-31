@@ -1,19 +1,8 @@
-// queries/getTimeline.ts
-import datoCMSClient from './datoCMSClient';
+// queries/getSkills.ts
+import skillsData from '../data/skills.json';
 import { Skill } from '../types';
 
-const GET_SKILLS = `
-{
-  allSkills(orderBy: category_ASC) {
-    name
-    category
-    description
-    icon
-  }
-}
-`;
-
 export async function getSkills(): Promise<Skill[]> {
-  const data = await datoCMSClient.request<{ allSkills: Skill[] }>(GET_SKILLS);
-  return data.allSkills;
+  // Using local JSON data instead of DatoCMS
+  return skillsData as Skill[];
 }
