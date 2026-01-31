@@ -1,0 +1,224 @@
+[
+    {
+        "name": "Python",
+        "category": "Programming & Dev",
+        "description": "Pandas, NumPy, SciPy, Matplotlib",
+        "icon": "SiPython"
+    },
+    {
+        "name": "SQL",
+        "category": "Programming & Dev",
+        "description": "CTEs, Window Functions",
+        "icon": "SiMysql"
+    },
+    {
+        "name": "R",
+        "category": "Programming & Dev",
+        "description": "Statistical Computing",
+        "icon": "SiR"
+    },
+    {
+        "name": "Java",
+        "category": "Programming & Dev",
+        "description": "Object-Oriented Programming",
+        "icon": "FaJava"
+    },
+    {
+        "name": "MATLAB",
+        "category": "Programming & Dev",
+        "description": "Numerical Computing",
+        "icon": "SiMatrix"
+    },
+    {
+        "name": "Node.js",
+        "category": "Programming & Dev",
+        "description": "Backend Runtime",
+        "icon": "FaNodeJs"
+    },
+    {
+        "name": "Scikit-learn",
+        "category": "Machine Learning & AI",
+        "description": "ML Library",
+        "icon": "SiScikitlearn"
+    },
+    {
+        "name": "PyTorch",
+        "category": "Machine Learning & AI",
+        "description": "Deep Learning Framework",
+        "icon": "SiPytorch"
+    },
+    {
+        "name": "TensorFlow",
+        "category": "Machine Learning & AI",
+        "description": "ML Platform",
+        "icon": "SiTensorflow"
+    },
+    {
+        "name": "NLTK",
+        "category": "Machine Learning & AI",
+        "description": "NLP Library",
+        "icon": "SiPython"
+    },
+    {
+        "name": "SpaCy",
+        "category": "Machine Learning & AI",
+        "description": "NLP Processing",
+        "icon": "SiPython"
+    },
+    {
+        "name": "CUDA",
+        "category": "Machine Learning & AI",
+        "description": "GPU Computing",
+        "icon": "SiNvidia"
+    },
+    {
+        "name": "Django",
+        "category": "Frameworks & APIs",
+        "description": "Python Web Framework",
+        "icon": "SiDjango"
+    },
+    {
+        "name": "Flask",
+        "category": "Frameworks & APIs",
+        "description": "Lightweight Python Framework",
+        "icon": "SiFlask"
+    },
+    {
+        "name": "FastAPI",
+        "category": "Frameworks & APIs",
+        "description": "Modern Python API",
+        "icon": "SiFastapi"
+    },
+    {
+        "name": "REST API",
+        "category": "Frameworks & APIs",
+        "description": "API Architecture",
+        "icon": "SiOpenapiinitiative"
+    },
+    {
+        "name": "GCP",
+        "category": "Cloud & DevOps",
+        "description": "Google Cloud Platform",
+        "icon": "SiGooglecloud"
+    },
+    {
+        "name": "Vertex AI",
+        "category": "Cloud & DevOps",
+        "description": "GCP ML Platform",
+        "icon": "SiGooglecloud"
+    },
+    {
+        "name": "AWS",
+        "category": "Cloud & DevOps",
+        "description": "Athena, Glue, S3",
+        "icon": "FaAws"
+    },
+    {
+        "name": "Azure",
+        "category": "Cloud & DevOps",
+        "description": "Data Factory",
+        "icon": "SiMicrosoftazure"
+    },
+    {
+        "name": "Docker",
+        "category": "Cloud & DevOps",
+        "description": "Containerization",
+        "icon": "FaDocker"
+    },
+    {
+        "name": "Kubernetes",
+        "category": "Cloud & DevOps",
+        "description": "Container Orchestration",
+        "icon": "SiKubernetes"
+    },
+    {
+        "name": "Git",
+        "category": "Cloud & DevOps",
+        "description": "Version Control",
+        "icon": "FaGitAlt"
+    },
+    {
+        "name": "Linux",
+        "category": "Cloud & DevOps",
+        "description": "Operating System",
+        "icon": "FaLinux"
+    },
+    {
+        "name": "Hadoop",
+        "category": "Big Data & Analytics",
+        "description": "Distributed Processing",
+        "icon": "SiApachehadoop"
+    },
+    {
+        "name": "Spark",
+        "category": "Big Data & Analytics",
+        "description": "Data Processing Engine",
+        "icon": "SiApachespark"
+    },
+    {
+        "name": "BigQuery",
+        "category": "Big Data & Analytics",
+        "description": "Data Warehouse",
+        "icon": "SiGooglebigquery"
+    },
+    {
+        "name": "Snowflake",
+        "category": "Big Data & Analytics",
+        "description": "Cloud Data Platform",
+        "icon": "SiSnowflake"
+    },
+    {
+        "name": "MySQL",
+        "category": "Databases",
+        "description": "Relational Database",
+        "icon": "SiMysql"
+    },
+    {
+        "name": "PostgreSQL",
+        "category": "Databases",
+        "description": "Relational Database",
+        "icon": "SiPostgresql"
+    },
+    {
+        "name": "Oracle DB",
+        "category": "Databases",
+        "description": "Enterprise Database",
+        "icon": "SiOracle"
+    },
+    {
+        "name": "Tableau",
+        "category": "Visualization & BI",
+        "description": "Data Visualization",
+        "icon": "SiTableau"
+    },
+    {
+        "name": "Power BI",
+        "category": "Visualization & BI",
+        "description": "Business Intelligence",
+        "icon": "SiPowerbi"
+    },
+    {
+        "name": "Looker Studio",
+        "category": "Visualization & BI",
+        "description": "Google Data Studio",
+        "icon": "SiLooker"
+    },
+    {
+        "name": "Excel",
+        "category": "Visualization & BI",
+        "description": "Spreadsheet Analytics",
+        "icon": "SiMicrosoftexcel"
+    },
+    {
+        "name": "Jira",
+        "category": "Tools & Practices",
+        "description": "Project Management",
+        "icon": "SiJira"
+    },
+    {
+        "name": "RapidMiner",
+        "category": "Tools & Practices",
+        "description": "Data Science Platform",
+        "icon": "SiRobotframework"
+    }
+]
