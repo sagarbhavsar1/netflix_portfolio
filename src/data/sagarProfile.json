@@ -1,0 +1,272 @@
+{
+    "name": "Sagar Bhavsar",
+    "headline": "Data Scientist | AI/ML (RAG, LLMs) | MS in Information Systems @ NYU | Python, SQL, AWS, GCP",
+    "location": "New York, NY",
+    "contact": {
+        "email": "sb9568@stern.nyu.edu",
+        "linkedin": "linkedin.com/in/sagarbhavsar1",
+        "portfolio": "sagarbhavsar.carrd.co"
+    },
+    "summary": "Data scientist and AI engineer with 3 years of experience building intelligent systems that bridge business and technology. Master's graduate from NYU Stern and Courant with a background in Computer Science and Information Systems. Focus on data science, AI, RAG systems, LLMs, and full-stack real-time analytics. Currently at Julius analyzing large-scale labor market datasets and designing clustering workflows on 2M+ datapoints.",
+    "yearsOfExperience": "3 years",
+    "visaStatus": "F-1 OPT - can work in the US for up to 3 years without sponsorship (until July 2028); after that, would need H-1B sponsorship",
+    "languages": [
+        "English (Native)",
+        "Hindi (Native)",
+        "Marathi (Native)"
+    ],
+    "education": [
+        {
+            "institution": "New York University (Stern School of Business, Courant School of Mathematics)",
+            "degree": "Master of Science in Information Systems",
+            "period": "August 2023 - May 2025",
+            "courses": "Databases for Business Analytics, Machine Learning, Data Structures and Algorithms, Predictive Analytics, Computer Networks, Data Science for Business, Finance, AI, Marketing, DevOps, Leadership"
+        },
+        {
+            "institution": "SRM Institute of Science and Technology",
+            "degree": "Bachelor of Technology in Computer Science and Business Systems",
+            "period": "2019 - 2023",
+            "location": "Chennai, India"
+        }
+    ],
+    "skills": {
+        "programming": [
+            "Python (Pandas, NumPy, SciPy, Matplotlib)",
+            "SQL (CTEs, Window Functions)",
+            "R",
+            "Java",
+            "MATLAB",
+            "NodeJS",
+            "JSON"
+        ],
+        "mlAi": [
+            "Scikit-learn",
+            "PyTorch",
+            "TensorFlow",
+            "CUDA",
+            "NLTK",
+            "SpaCy",
+            "RAG",
+            "LLMs",
+            "Vector Embeddings"
+        ],
+        "frameworks": [
+            "Django",
+            "Flask",
+            "FastAPI",
+            "REST APIs"
+        ],
+        "bigData": [
+            "Hadoop",
+            "Spark",
+            "BigQuery",
+            "Snowflake"
+        ],
+        "cloud": [
+            "GCP",
+            "Vertex AI",
+            "AWS (Athena, Glue, S3, EC2, EFS)",
+            "Azure Data Factory",
+            "Palantir Foundry"
+        ],
+        "devops": [
+            "Docker",
+            "Kubernetes",
+            "Git",
+            "GitHub Actions (CI/CD)",
+            "Linux",
+            "ArgoCD"
+        ],
+        "databases": [
+            "MySQL",
+            "PostgreSQL",
+            "Oracle DB",
+            "ChromaDB"
+        ],
+        "visualization": [
+            "Tableau",
+            "Power BI",
+            "Looker Studio",
+            "Excel"
+        ],
+        "tools": [
+            "Jira",
+            "Zenhub",
+            "RapidMiner"
+        ]
+    },
+    "experience": [
+        {
+            "company": "Julius",
+            "title": "Data Scientist & Analyst",
+            "period": "October 2025 - Present",
+            "location": "New York, NY",
+            "highlights": [
+                "Conduct labor market intelligence analysis in energy and high-growth industries, leveraging job posting data to identify emerging skill trends and workforce patterns",
+                "Design and implement end-to-end NLP clustering workflow using BigQuery, Vertex AI (vector embeddings), and Python (UMAP, HDBSCAN) to group 2M+ jobs by semantic similarity",
+                "Engineer data extraction pipelines from BigQuery and optimize storage on Google Cloud Storage",
+                "Build and refine Looker Studio dashboards to communicate findings effectively"
+            ]
+        },
+        {
+            "company": "RANGR Data",
+            "title": "Palantir Foundry Engineer (Software Engineer)",
+            "period": "June 2025 - September 2025",
+            "highlights": [
+                "Designed and developed a fully functional CRM application in Palantir Foundry",
+                "Built ETL pipelines for ingestion, transformation, and aggregation of customer and opportunity data",
+                "Embedded AIP Assist and custom GPT-powered chatbot for natural-language queries",
+                "Delivered clean, user-friendly CRM interface combining analytical intelligence with operational interactivity"
+            ]
+        },
+        {
+            "company": "OnDeck",
+            "title": "Data Analyst (Risk, Finance)",
+            "period": "October 2024 - September 2025",
+            "highlights": [
+                "Collaborated on borrower segmentation project, identifying high-risk and high-value customers",
+                "Utilized advanced SQL with window functions and CTEs on AWS Athena, improving ETL workflows and boosting query performance by 15%",
+                "Conducted cohort and trend analysis revealing 11% rise in mobile wallet usage among millennials",
+                "Built Power BI dashboards with DAX measures, automated data validation using AWS Glue reducing ingestion errors by 21%"
+            ]
+        },
+        {
+            "company": "NYU Stern School of Business",
+            "title": "Teaching Assistant & Research Assistant",
+            "period": "February 2024 - May 2025",
+            "highlights": [
+                "TA for 'Analytics and Machine Learning for Managers' course for Executive-MBA cohort",
+                "TA for 'Databases for Business Analytics' for MSBA students",
+                "Teaching Fellow for 'Business Communication' for MBA cohort",
+                "Research Assistant assisting Professor Melissa Schilling in healthcare research on ALS, handling 100K+ records"
+            ]
+        },
+        {
+            "company": "EasyTransfer (Cashfree Payments)",
+            "title": "Marketing Analytics Intern",
+            "period": "May 2024 - July 2024",
+            "location": "New York, NY",
+            "highlights": [
+                "Analyzed customer data using ML to identify key demographics, resulting in 15% increase in campaign engagement",
+                "Conducted A/B testing on email campaigns to optimize subject lines and content",
+                "Leveraged Google Analytics and Python to track and analyze website traffic, achieving 20% drop in bounce rate"
+            ]
+        },
+        {
+            "company": "SRM Institute of Science and Technology",
+            "title": "Research Assistant (Deep Learning, AI)",
+            "period": "July 2022 - May 2023",
+            "highlights": [
+                "Collaborated on two pioneering research papers in deep learning and neural networks for image processing",
+                "Analyzed dataset of 30k samples using VGG16 model for image upscaling",
+                "Achieved 81% accuracy based on SSIM and PSNR evaluation metrics"
+            ]
+        },
+        {
+            "company": "Esmech Equipment (SMS Group)",
+            "title": "Data Analyst",
+            "period": "January 2022 - January 2023",
+            "location": "Mumbai, India",
+            "highlights": [
+                "Analyzed years of sales data across multiple regions in India",
+                "Managed Azure SQL queries and optimized ETL pipelines using Azure Data Factory",
+                "Conducted cohort and time-series analysis improving forecasting accuracy by 17%",
+                "Applied K-means clustering for customer segmentation, resulting in 21% increase in focused sales efforts",
+                "Developed interactive Tableau dashboards enhancing executive decision-making by 23%"
+            ]
+        },
+        {
+            "company": "HighRadius",
+            "title": "Data Science Intern",
+            "period": "January 2022 - April 2022",
+            "highlights": [
+                "Developed full-stack invoice management system using ReactJS, Java Servlets, and SQL",
+                "Built and deployed XGBoost models achieving 92% accuracy on 1M+ transactions",
+                "Contributed to 17% increase in client acquisition through targeted outreach strategies"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Cadillac Website Enhancement",
+            "description": "Enhanced the NCDB website with a chatbot using Google Flan-T5 and ChromaDB, handling 500+ daily user queries. Built an image-to-text feature using ResNet18 CNN model trained on 60K+ car images. Deployed on AWS (EC2, S3, EFS), reducing training time by 50%.",
+            "tech": [
+                "Google Flan-T5",
+                "ChromaDB",
+                "ResNet18",
+                "AWS EC2",
+                "S3",
+                "EFS"
+            ]
+        },
+        {
+            "name": "Image De-hazer System",
+            "description": "Designed a CNN model for image upscaling and dehazing, achieving 90% novel accuracy. Published findings in IEEE and presented at ICECONF'23.",
+            "tech": [
+                "Python",
+                "TensorFlow",
+                "OpenCV",
+                "VGG16",
+                "RESIDE Dataset"
+            ]
+        },
+        {
+            "name": "PDF to Podcast Converter",
+            "description": "Developed a website that converts PDF documents into podcasts with 2 AI hosts discussing the content. Implemented intelligent text chunking, pdf-parsing, audio generation. Deployed globally at 0 running costs.",
+            "tech": [
+                "NLP",
+                "LLMs",
+                "Text-to-Speech",
+                "Full-Stack"
+            ]
+        },
+        {
+            "name": "Domino's Pizza Brand Strategy Case Study",
+            "description": "NYU Stern Marketing course project analyzing Domino's brand and marketing strategies, showcasing innovative approaches and effective branding.",
+            "tech": [
+                "Marketing Analytics",
+                "Case Study"
+            ]
+        },
+        {
+            "name": "COVID-19 Cases Analysis in India",
+            "description": "Processed India-wide COVID-19 data from data.gov.in, performing analysis and visualization with various inferences.",
+            "tech": [
+                "Python",
+                "Data Analysis",
+                "Visualization"
+            ]
+        }
+    ],
+    "certifications": [
+        "Building RAG Systems",
+        "Palantir Foundry and AIP Builder Foundations",
+        "Certified Ethical Hacker (CEH)",
+        "Linux and Data Analytics",
+        "Google Analytics",
+        "Nvidia RAG Agents",
+        "CS50",
+        "BCG Data Science Virtual Internship"
+    ],
+    "publications": [
+        "Graph Neural Networks: Image Dehazing Using Enhanced Feature Extraction Techniques in Deep Learning (IEEE, ICECONF'23)",
+        "The Geographic Association of Multiple Sclerosis and Amyotrophic Lateral Sclerosis (Contributor)"
+    ],
+    "leadershipAndExtracurricular": [
+        "Course Supervisor & Teaching Fellow at NYU Stern for MBA and Executive-MBA cohorts",
+        "SRM Data Science Club Vice President - Organized seminars and hackathons for 300+ students",
+        "National-Level Table Tennis Player - 100+ awards, team captain for school and NYU A-team"
+    ],
+    "hobbiesAndInterests": [
+        "National level table tennis player with 100+ certificates and 20+ trophies",
+        "Building things and working on new projects",
+        "Reading about space and cosmos",
+        "Watching Netflix",
+        "Exploring, cooking, and hanging out with friends"
+    ],
+    "funFacts": [
+        "Blue is my favorite color",
+        "Sagar means 'ocean/sea' in Hindi - that's why I love water and feel it's my closest element",
+        "Was captain of school and NYU table tennis teams"
+    ]
+}
