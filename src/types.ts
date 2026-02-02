@@ -31,6 +31,8 @@ export interface Project {
   description: string;
   techUsed: string;
   image: { url: string };
+  link?: string;
+  dateRange?: string;
 }
 
 export interface Certification {
@@ -52,7 +54,7 @@ export interface ContactMe {
   phoneNumber: string;
 }
 
-export interface Skill { 
+export interface Skill {
   name: string;
   category: string;
   description: string;

@@ -62,30 +62,34 @@ const techIcons: { [key: string]: JSX.Element } = {
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([])
-  
-  useEffect(() => { 
+
+  useEffect(() => {
     async function fetchProjects() {
       const data = await getProjects();
       setProjects(data);
     }
-    
+
     fetchProjects()
   }, [])
-  
+
   if (projects.length === 0) return <div>Loading...</div>;
 
   return (
     <div className="projects-container">
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div
+          <a
+            href={project.link || '#'}
             key={index}
+            target="_blank"
+            rel="noopener noreferrer"
             className="project-card"
-            style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}
+            style={{ '--delay': `${index * 0.1}s`, textDecoration: 'none' } as React.CSSProperties}
           >
             <img src={project.image.url} alt={project.title} className="project-image" />
             <div className="project-details">
               <h3>{project.title}</h3>
+              {project.dateRange && <span className="project-date">{project.dateRange}</span>}
               <p>{project.description}</p>
               <div className="tech-used">
                 {project.techUsed.split(', ').map((tech, i) => (
@@ -95,7 +99,7 @@ const Projects: React.FC = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

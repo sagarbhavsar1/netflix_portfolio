@@ -1,0 +1,92 @@
+[
+    {
+        "timelineType": "work",
+        "name": "Julius",
+        "title": "Data Scientist & Analyst",
+        "dateRange": "October 2025 - Present",
+        "techStack": "BigQuery, Vertex AI, Python, UMAP, HDBSCAN, Looker Studio, GCP",
+        "summaryPoints": [
+            "Conducting labor market intelligence analysis in energy and high-growth industries. Designed end-to-end NLP clustering workflow to group 2M+ jobs by semantic similarity using vector embeddings. Built Looker Studio dashboards for stakeholder insights."
+        ]
+    },
+    {
+        "timelineType": "work",
+        "name": "RANGR Data",
+        "title": "Palantir Foundry Engineer",
+        "dateRange": "June 2025 - September 2025",
+        "techStack": "Palantir Foundry, Ontology Manager, AIP Assist, GPT, Workshop",
+        "summaryPoints": [
+            "Designed and developed a fully functional CRM application in Palantir Foundry. Built ETL pipelines for customer data ingestion and transformation. Embedded AI-powered chatbot for natural-language queries and contextual insights."
+        ]
+    },
+    {
+        "timelineType": "work",
+        "name": "OnDeck",
+        "title": "Data Analyst (Risk, Finance)",
+        "dateRange": "October 2024 - September 2025",
+        "techStack": "SQL, AWS Athena, S3, Python, Power BI, AWS Glue, DAX",
+        "summaryPoints": [
+            "Collaborated on borrower segmentation project identifying high-risk customers. Utilized advanced SQL with CTEs and window functions, improving query performance by 15%. Built Power BI dashboards and automated data validation reducing ingestion errors by 21%."
+        ]
+    },
+    {
+        "timelineType": "work",
+        "name": "NYU Stern School of Business",
+        "title": "Teaching Assistant & Research Assistant",
+        "dateRange": "February 2024 - May 2025",
+        "techStack": "Python, Pandas, NumPy, Tableau, Excel",
+        "summaryPoints": [
+            "TA for 'Analytics and Machine Learning for Managers' (Executive-MBA cohort). Research Assistant for Professor Melissa Schilling on ALS healthcare research, handling 100K+ records. TA for 'Databases for Business Analytics' course."
+        ]
+    },
+    {
+        "timelineType": "work",
+        "name": "EasyTransfer (Cashfree Payments)",
+        "title": "Marketing Analytics Intern",
+        "dateRange": "May 2024 - July 2024",
+        "techStack": "Python, Machine Learning, Google Analytics, A/B Testing",
+        "summaryPoints": [
+            "Analyzed customer data using ML techniques, achieving 15% increase in campaign engagement. Conducted A/B testing on email campaigns. Leveraged Google Analytics to track user behavior, reducing bounce rate by 20%."
+        ]
+    },
+    {
+        "timelineType": "work",
+        "name": "Esmech Equipment (SMS Group)",
+        "title": "Data Analyst",
+        "dateRange": "January 2022 - January 2023",
+        "techStack": "Azure SQL, Azure Data Factory, Python, Pandas, R, Tableau, K-means",
+        "summaryPoints": [
+            "Analyzed years of sales data across multiple regions in India. Optimized ETL pipelines using Azure Data Factory. Conducted cohort and time-series analysis improving forecasting accuracy by 17%. Applied K-means clustering for customer segmentation."
+        ]
+    },
+    {
+        "timelineType": "work",
+        "name": "HighRadius",
+        "title": "Data Science Intern",
+        "dateRange": "January 2022 - April 2022",
+        "techStack": "ReactJS, Java Servlets, SQL, XGBoost, Machine Learning",
+        "summaryPoints": [
+            "Developed full-stack invoice management system with ML integration. Built and deployed XGBoost models achieving 92% accuracy on 1M+ transactions. Contributed to 17% increase in client acquisition through data-driven strategies."
+        ]
+    },
+    {
+        "timelineType": "education",
+        "name": "New York University",
+        "title": "Master of Science in Information Systems",
+        "dateRange": "August 2023 - May 2025",
+        "techStack": "",
+        "summaryPoints": [
+            "Stern School of Business & Courant School of Mathematics. Courses: Machine Learning, Databases for Business Analytics, Data Structures, Predictive Analytics, Data Science for Business, AI, DevOps, Leadership."
+        ]
+    },
+    {
+        "timelineType": "education",
+        "name": "SRM Institute of Science and Technology",
+        "title": "Bachelor of Technology in Computer Science",
+        "dateRange": "August 2019 - June 2023",
+        "techStack": "",
+        "summaryPoints": [
+            "Computer Science and Business Systems. Vice President of SRM Data Science Club. Published research in IEEE. National-level Table Tennis player."
+        ]
+    }
+]

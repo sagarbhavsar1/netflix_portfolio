@@ -34,6 +34,34 @@
   gap: 1.5rem;
   width: 100%;
   justify-items: center;
+  margin-top: 2rem;
+}
+
+.linkedin-embeds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+}
+
+.linkedin-embed-wrapper {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.linkedin-embed-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(229, 9, 20, 0.5);
+}
+
+.linkedin-embed-wrapper iframe {
+  display: block;
+  max-width: 100%;
 }
 
 .blog-card {
@@ -50,12 +78,15 @@
   gap: 1rem;
   animation: popUp 0.5s ease forwards, bounce 2s infinite 1.5s;
   opacity: 0;
-  cursor: pointer; /* Add pointer on hover */
+  cursor: pointer;
+  /* Add pointer on hover */
 }
 
 .blog-card:hover {
-  transform: scale(1.5); /* Zoom-in effect */
-  box-shadow: 1rem 1rem 1rem rgba(8, 118, 242, 0.4); /* Blue shadow */
+  transform: scale(1.5);
+  /* Zoom-in effect */
+  box-shadow: 1rem 1rem 1rem rgba(8, 118, 242, 0.4);
+  /* Blue shadow */
 }
 
 .blog-icon {
@@ -90,26 +121,59 @@
 
 /* Animations */
 @keyframes slideDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes popUp {
-  from { opacity: 0; transform: translateY(50px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
 }

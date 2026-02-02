@@ -21,9 +21,12 @@
   margin-bottom: 40px;
   display: inline-block;
   text-align: center;
-  opacity: 0; /* Start invisible */
-  transform: translateY(20px); /* Start slightly lower */
-  animation: fadeInUp 2s ease-in-out both; /* Animation properties */
+  opacity: 0;
+  /* Start invisible */
+  transform: translateY(20px);
+  /* Start slightly lower */
+  animation: fadeInUp 2s ease-in-out both;
+  /* Animation properties */
 }
 
 /* Define the keyframes for the fade-in-up animation */
@@ -32,6 +35,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

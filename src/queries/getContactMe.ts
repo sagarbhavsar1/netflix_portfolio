@@ -1,25 +1,8 @@
 // queries/getContactMe.ts
-import datoCMSClient from './datoCMSClient';
 import { ContactMe } from '../types';
-
-const GET_CONTACT_ME = `
-  query {
-    contactMe {
-      profilePicture {
-        url
-      }
-      name
-      title
-      summary
-      companyUniversity
-      linkedinLink
-      email
-      phoneNumber
-    }
-  }
-`;
+import contactMeData from '../data/contactMe.json';
 
 export async function getContactMe(): Promise<ContactMe> {
-  const data = await datoCMSClient.request<{ contactMe: ContactMe }>(GET_CONTACT_ME);
-  return data.contactMe;
+  // Return local JSON data instead of DatoCMS
+  return contactMeData as ContactMe;
 }

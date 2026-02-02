@@ -1,20 +1,8 @@
 // queries/getCertifications.ts
-import datoCMSClient from './datoCMSClient';
 import { Certification } from '../types';
-
-const GET_CERTIFICATIONS = `
-  query {
-    allCertifications {
-      title
-      issuer
-      issuedDate
-      link
-      iconName
-    }
-  }
-`;
+import certificationsData from '../data/certifications.json';
 
 export async function getCertifications(): Promise<Certification[]> {
-  const data = await datoCMSClient.request<{ allCertifications: Certification[] }>(GET_CERTIFICATIONS);
-  return data.allCertifications;
+  // Return local JSON data instead of DatoCMS
+  return certificationsData as Certification[];
 }
