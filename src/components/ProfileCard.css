@@ -40,15 +40,17 @@
 .profile-name {
   color: #808080;
   display: block;
-  font-size: 1.3vw;
-  line-height: 1.2em;
-  margin-top: 0.8em;
+  width: 100%;
+  font-size: 0.9vw;
+  line-height: 1.4;
+  margin-top: 10px;
   overflow: hidden;
   text-align: center;
   text-overflow: ellipsis;
   font-weight: 400;
   text-transform: capitalize;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .profile-card:hover .profile-name {
