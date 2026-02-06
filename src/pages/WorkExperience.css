@@ -1,43 +1,416 @@
-.vertical-timeline-element-content {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Experience Page - Netflix Premium with Firecracker Animation */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+.experience-page {
+  min-height: 100vh;
+  padding: 40px;
+  padding-top: 100px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  position: relative;
 }
 
-.vertical-timeline-element-content:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* Loading State */
+.experience-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 20px;
+  color: #888;
 }
 
+.experience-loading .loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #333;
+  border-top-color: #e50914;
+  border-radius: 50%;
+}
 
-.timeline-container {
+/* Header */
+.experience-header {
   text-align: center;
-  padding: 20px;
-  margin-top: 5rem;
+  margin-bottom: 60px;
 }
 
-.timeline-title {
-  font-size: 2rem;
+.experience-title {
+  font-size: 2.8rem;
+  font-weight: 700;
   color: #fff;
-  font-weight: bold;
-  margin-bottom: 40px;
-  display: inline-block;
-  text-align: center;
-  opacity: 0;
-  /* Start invisible */
-  transform: translateY(20px);
-  /* Start slightly lower */
-  animation: fadeInUp 2s ease-in-out both;
-  /* Animation properties */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
 }
 
-/* Define the keyframes for the fade-in-up animation */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
+.title-icon {
+  color: #e50914;
+  font-size: 2.2rem;
+}
+
+.experience-subtitle {
+  font-size: 1.1rem;
+  color: #888;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Timeline Wrapper */
+.timeline-wrapper {
+  position: relative;
+  padding-left: 60px;
+}
+
+/* The Wire - Main Timeline Line */
+.timeline-wire {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 80px;
+  width: 4px;
+  background: #2a2a2a;
+  border-radius: 2px;
+  overflow: visible;
+}
+
+.wire-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #e50914 0%, #ff6b35 50%, #FFD700 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.6);
+  transition: height 0.1s linear;
+}
+
+/* Firecracker Spark */
+.firecracker-spark {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.spark-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, #FFD700 0%, #FF6B35 50%, #e50914 100%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 8px #FFD700,
+    0 0 16px #FF6B35,
+    0 0 24px rgba(229, 9, 20, 0.8);
+  animation: sparkPulse 0.2s infinite alternate;
+}
+
+@keyframes sparkPulse {
+  from {
+    transform: translate(-50%, -50%) scale(1);
   }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  to {
+    transform: translate(-50%, -50%) scale(1.2);
   }
+}
+
+.spark-trail {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 20px;
+  background: linear-gradient(180deg, transparent, #FFD700);
+  opacity: 0.8;
+}
+
+.spark-particle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #FFD700;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #FFD700;
+}
+
+/* Firecracker Burst */
+.firecracker-burst {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.burst-particle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.burst-star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: #FFD700;
+  filter: drop-shadow(0 0 8px #FFD700);
+  animation: starSpin 3s linear infinite;
+}
+
+@keyframes starSpin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Timeline Sections */
+.timeline-section {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #333;
+}
+
+.section-title .section-icon {
+  color: #e50914;
+  font-size: 1.3rem;
+}
+
+.section-title.education .section-icon {
+  color: #4ECDC4;
+}
+
+/* Timeline Cards */
+.timeline-card {
+  position: relative;
+  background: linear-gradient(145deg, #1a1a1a 0%, #151515 100%);
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.timeline-card:hover {
+  border-color: #e50914;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(229, 9, 20, 0.15);
+}
+
+.timeline-card.education:hover {
+  border-color: #4ECDC4;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(78, 205, 196, 0.15);
+}
+
+/* Card Marker (connecting to wire) */
+.card-marker {
+  position: absolute;
+  left: -44px;
+  top: 24px;
+  width: 32px;
+  height: 32px;
+  background: #e50914;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.5);
+  z-index: 5;
+}
+
+.card-marker.education {
+  background: #4ECDC4;
+  box-shadow: 0 0 12px rgba(78, 205, 196, 0.5);
+}
+
+/* Card connector line */
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 36px;
+  width: 20px;
+  height: 2px;
+  background: #2a2a2a;
+}
+
+/* Card Content */
+.card-content {
+  position: relative;
+}
+
+.card-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #e50914;
+  font-weight: 500;
+  margin-bottom: 8px;
+  background: rgba(229, 9, 20, 0.1);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.timeline-card.education .card-date {
+  color: #4ECDC4;
+  background: rgba(78, 205, 196, 0.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.card-company {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #bbb;
+  margin: 0 0 12px;
+}
+
+.card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tech-tag {
+  font-size: 0.75rem;
+  color: #aaa;
+  background: #252525;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Timeline End */
+.timeline-end {
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 20px;
+}
+
+.journey-start-label {
+  font-size: 1rem;
+  color: #FFD700;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-page {
+    padding: 20px;
+    padding-top: 90px;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .timeline-wrapper {
+    padding-left: 40px;
+  }
+
+  .timeline-wire {
+    left: 12px;
+  }
+
+  .timeline-card {
+    padding: 20px;
+    margin-left: 16px;
+  }
+
+  .card-marker {
+    left: -36px;
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .timeline-card::before {
+    left: -16px;
+    width: 16px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+  .spark-core,
+  .burst-star,
+  .timeline-card,
+  .firecracker-spark,
+  .burst-particle {
+    animation: none;
+    transition: none;
+  }
+
+  .wire-progress {
+    transition: none;
+  }
+}
+
+/* Focus States */
+.timeline-card:focus-visible {
+  outline: 2px solid #e50914;
+  outline-offset: 2px;
 }
