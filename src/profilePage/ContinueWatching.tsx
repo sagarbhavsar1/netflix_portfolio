@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ContinueWatching.css';
 
-type ProfileType = 'recruiter' | 'developer' | 'stalker' | 'adventure';
+type ProfileType = 'recruiter' | 'developer' | 'friend' | 'adventure';
 
 interface ContinueWatchingProps {
   profile: ProfileType;
@@ -21,7 +21,7 @@ const continueWatchingConfig = {
     { title: "Projects", imgSrc: "https://picsum.photos/seed/projects/300/200", link: "/projects" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
   ],
-  stalker: [
+  friend: [
     { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
     { title: "Recommendations", imgSrc: "https://picsum.photos/seed/recs/300/200", link: "/recommendations" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
@@ -38,7 +38,7 @@ const ContinueWatching: React.FC<ContinueWatchingProps> = ({ profile }) => {
 
   return (
     <div className="continue-watching-row">
-      <h2 className="row-title">Continue Watching for {profile}</h2>
+      <h2 className="row-title">Continue Watching{profile !== 'friend' ? ` for ${profile.charAt(0).toUpperCase() + profile.slice(1)}` : ''}</h2>
       <div className="card-row">
         {continueWatching.map((pick, index) => (
           <Link to={pick.link} key={index} className="pick-card">

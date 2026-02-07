@@ -92,3 +92,23 @@
   margin-right: 5px;
   font-size: 1.2rem;
 }
+
+.project-date {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Animation keyframes - REQUIRED for cards to appear */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
