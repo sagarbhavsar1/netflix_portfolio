@@ -3,7 +3,7 @@
 
 .skills-page {
   min-height: 100vh;
-  padding: 40px;
+  padding: 40px 20px;
   padding-top: 100px;
   max-width: 1200px;
   margin: 0 auto;
@@ -48,13 +48,17 @@
   color: #888;
   max-width: 500px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* Search Container */
 .search-container {
   position: relative;
   max-width: 400px;
-  margin: 0 auto 32px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
 }
 
 .search-icon {
@@ -76,6 +80,7 @@
   border-radius: 8px;
   color: #fff;
   transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
 }
 
 .search-input:focus {
@@ -145,6 +150,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
+  width: 100%;
 }
 
 /* Category Section */
@@ -155,6 +161,7 @@
 .category-title {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   margin-bottom: 24px;
   padding-bottom: 12px;
@@ -179,8 +186,9 @@
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
   gap: 16px;
+  justify-content: center;
 }
 
 /* Skill Card - Premium Netflix Style */
@@ -217,6 +225,37 @@
 
 .skill-card:hover .card-glow {
   opacity: 1;
+}
+
+/* Magical Shimmer Effect */
+.card-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.03),
+      transparent);
+  transform: skewX(-25deg);
+  transition: none;
+}
+
+.skill-card:hover .card-shine {
+  animation: shimmer 0.8s ease-out forwards;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 200%;
+  }
 }
 
 /* Skill Icon */

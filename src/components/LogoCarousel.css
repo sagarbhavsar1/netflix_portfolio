@@ -1,0 +1,105 @@
+/* Logo Carousel Section */
+.logo-carousel-section {
+    margin: 40px 0 60px;
+    text-align: center;
+}
+
+.carousel-label {
+    font-size: 0.9rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+/* Carousel Container */
+.logo-carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+/* Fade gradients on edges */
+.logo-carousel-gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.logo-carousel-gradient.left {
+    left: 0;
+    background: linear-gradient(90deg, #141414 0%, transparent 100%);
+}
+
+.logo-carousel-gradient.right {
+    right: 0;
+    background: linear-gradient(-90deg, #141414 0%, transparent 100%);
+}
+
+/* Infinite scrolling track */
+.logo-carousel-track {
+    display: flex;
+    gap: 100px;
+    animation: scroll 35s linear infinite;
+    width: max-content;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause on hover */
+.logo-carousel-container:hover .logo-carousel-track {
+    animation-play-state: paused;
+}
+
+/* Individual logo items */
+.logo-item {
+    flex-shrink: 0;
+    width: 240px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.logo-item:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo-carousel-gradient {
+        width: 40px;
+    }
+
+    .logo-item {
+        width: 140px;
+        height: 70px;
+    }
+
+    .logo-carousel-track {
+        gap: 50px;
+    }
+}

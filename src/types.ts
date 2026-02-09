@@ -8,6 +8,7 @@ export interface ProfileBanner {
   };
   linkedinLink: string;
   profileSummary: string;
+  fullBio: string;
 }
 
 export interface WorkPermit {
@@ -24,6 +25,8 @@ export interface TimelineItem {
   techStack: string;
   summaryPoints: string[];
   dateRange: string;
+  logo?: string;
+  websiteUrl?: string;
 }
 
 export interface Project {

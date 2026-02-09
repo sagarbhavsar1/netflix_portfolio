@@ -192,9 +192,9 @@ const Skills: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="skills-title">Technical Arsenal</h1>
+        <h1 className="skills-title">Technical Toolkit</h1>
         <p className="skills-subtitle">
-          {skillsData.length}+ technologies mastered across data science, cloud, and development
+          My stack for data science, cloud, and development
         </p>
       </motion.div>
 
@@ -287,22 +287,12 @@ const Skills: React.FC = () => {
                       layout
                     >
                       <div className="card-glow" />
+                      <div className="card-shine" />
                       <div className="skill-icon">
                         {iconMap[skill.icon] || <FaReact />}
                       </div>
                       <h4 className="skill-name">{skill.name}</h4>
                       <p className="skill-description">{skill.description}</p>
-
-                      {/* Proficiency Bar */}
-                      <div className="proficiency-container">
-                        <motion.div
-                          className="proficiency-bar"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${getProficiency(skill.name)}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1, delay: idx * 0.05 }}
-                        />
-                      </div>
                     </motion.div>
                   ))}
                 </motion.div>

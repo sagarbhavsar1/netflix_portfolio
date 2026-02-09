@@ -11,35 +11,35 @@ interface TopPicksRowProps {
 
 const topPicksConfig = {
   recruiter: [
-    { title: "Find Your Fit", imgSrc: "https://picsum.photos/seed/aifit/250/200", icon: <FaRocket />, route: "/find-your-fit" },
+    { title: "Find Your Fit", imgSrc: "/images/find-your-fit.jpg", icon: <FaRocket />, route: "/find-your-fit" },
     { title: "Skills", imgSrc: "/images/skills-banner.jpeg", icon: <FaCode />, route: "/skills" },
     { title: "Experience", imgSrc: "/images/experience-banner.avif", icon: <FaBriefcase />, route: "/work-experience" },
-    { title: "Certifications", imgSrc: "https://picsum.photos/seed/certifications/250/200", icon: <FaCertificate />, route: "/certifications" },
-    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/recommendations/250/200", icon: <FaHandsHelping />, route: "/recommendations" },
-    { title: "Projects", imgSrc: "https://picsum.photos/seed/projects/250/200", icon: <FaProjectDiagram />, route: "/projects" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/seed/contact/250/200", icon: <FaEnvelope />, route: "/contact-me" }
+    { title: "Certifications", imgSrc: "/images/certifications.webp", icon: <FaCertificate />, route: "/certifications" },
+    { title: "Recommendations", imgSrc: "/images/recommendations.jpg", icon: <FaHandsHelping />, route: "/recommendations" },
+    { title: "Projects", imgSrc: "/images/projects.jpg", icon: <FaProjectDiagram />, route: "/projects" },
+    { title: "Contact Me", imgSrc: "/images/contact-me.jpg", icon: <FaEnvelope />, route: "/contact-me" }
   ],
   developer: [
     { title: "Skills", imgSrc: "/images/skills-banner.jpeg", route: "/skills", icon: <FaCode /> },
-    { title: "Projects", imgSrc: "https://picsum.photos/seed/development/250/200", route: "/projects", icon: <FaProjectDiagram /> },
-    { title: "Certifications", imgSrc: "https://picsum.photos/seed/badge/250/200", route: "/certifications", icon: <FaCertificate /> },
+    { title: "Projects", imgSrc: "/images/projects.jpg", route: "/projects", icon: <FaProjectDiagram /> },
+    { title: "Certifications", imgSrc: "/images/certifications.webp", route: "/certifications", icon: <FaCertificate /> },
     { title: "Experience", imgSrc: "/images/experience-banner.avif", route: "/work-experience", icon: <FaBriefcase /> },
-    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/networking/250/200", route: "/recommendations", icon: <FaHandsHelping /> },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/seed/connect/250/200", route: "/contact-me", icon: <FaEnvelope /> }
+    { title: "Recommendations", imgSrc: "/images/recommendations.jpg", route: "/recommendations", icon: <FaHandsHelping /> },
+    { title: "Contact Me", imgSrc: "/images/contact-me.jpg", route: "/contact-me", icon: <FaEnvelope /> }
   ],
   friend: [
-    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/networking/250/200", route: "/recommendations", icon: <FaHandsHelping /> },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/seed/call/250/200", route: "/contact-me", icon: <FaEnvelope /> },
-    { title: "Projects", imgSrc: "https://picsum.photos/seed/planning/250/200", route: "/projects", icon: <FaProjectDiagram /> },
+    { title: "Recommendations", imgSrc: "/images/recommendations.jpg", route: "/recommendations", icon: <FaHandsHelping /> },
+    { title: "Contact Me", imgSrc: "/images/contact-me.jpg", route: "/contact-me", icon: <FaEnvelope /> },
+    { title: "Projects", imgSrc: "/images/projects.jpg", route: "/projects", icon: <FaProjectDiagram /> },
     { title: "Experience", imgSrc: "/images/experience-banner.avif", route: "/work-experience", icon: <FaBriefcase /> },
-    { title: "Certifications", imgSrc: "https://picsum.photos/seed/achievements/250/200", route: "/certifications", icon: <FaCertificate /> },
+    { title: "Certifications", imgSrc: "/images/certifications.webp", route: "/certifications", icon: <FaCertificate /> },
   ],
   adventure: [
-    { title: "Projects", imgSrc: "https://picsum.photos/seed/innovation/250/200", route: "/projects", icon: <FaProjectDiagram /> },
+    { title: "Projects", imgSrc: "/images/projects.jpg", route: "/projects", icon: <FaProjectDiagram /> },
     { title: "Skills", imgSrc: "/images/skills-banner.jpeg", route: "/skills", icon: <FaCode /> },
     { title: "Experience", imgSrc: "/images/experience-banner.avif", route: "/work-experience", icon: <FaBriefcase /> },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/seed/connect/250/200", route: "/contact-me", icon: <FaEnvelope /> },
-    { title: "Certifications", imgSrc: "https://picsum.photos/seed/medal/250/200", route: "/certifications", icon: <FaCertificate /> }
+    { title: "Contact Me", imgSrc: "/images/contact-me.jpg", route: "/contact-me", icon: <FaEnvelope /> },
+    { title: "Certifications", imgSrc: "/images/certifications.webp", route: "/certifications", icon: <FaCertificate /> }
   ]
 };
 

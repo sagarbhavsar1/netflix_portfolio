@@ -10,26 +10,26 @@ interface ContinueWatchingProps {
 
 const continueWatchingConfig = {
   recruiter: [
-    { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
+    { title: "Blogs", imgSrc: "/images/blogs.jpg", link: "/blogs" },
     { title: "Skills", imgSrc: "/images/skills-banner.jpeg", link: "/skills" },
     { title: "Experience", imgSrc: "/images/experience-banner.avif", link: "/work-experience" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    { title: "Contact Me", imgSrc: "/images/contact-me.jpg", link: "/contact-me" }
   ],
   developer: [
-    { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
-    { title: "Certifications", imgSrc: "https://picsum.photos/id/1028/300/200", link: "/certifications" },
-    { title: "Projects", imgSrc: "https://picsum.photos/seed/projects/300/200", link: "/projects" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    { title: "Blogs", imgSrc: "/images/blogs.jpg", link: "/blogs" },
+    { title: "Certifications", imgSrc: "/images/certifications.webp", link: "/certifications" },
+    { title: "Projects", imgSrc: "/images/projects.jpg", link: "/projects" },
+    { title: "Contact Me", imgSrc: "/images/contact-me.jpg", link: "/contact-me" }
   ],
   friend: [
-    { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
-    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/recs/300/200", link: "/recommendations" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    { title: "Blogs", imgSrc: "/images/blogs.jpg", link: "/blogs" },
+    { title: "Recommendations", imgSrc: "/images/recommendations.jpg", link: "/recommendations" },
+    { title: "Contact Me", imgSrc: "/images/contact-me.jpg", link: "/contact-me" }
   ],
   adventure: [
-    { title: "Certifications", imgSrc: "https://picsum.photos/id/1028/300/200", link: "/certifications" },
-    { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    { title: "Certifications", imgSrc: "/images/certifications.webp", link: "/certifications" },
+    { title: "Blogs", imgSrc: "/images/blogs.jpg", link: "/blogs" },
+    { title: "Contact Me", imgSrc: "/images/contact-me.jpg", link: "/contact-me" }
   ]
 };
 

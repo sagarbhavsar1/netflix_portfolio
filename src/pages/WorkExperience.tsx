@@ -2,10 +2,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { MdOutlineWork as WorkIcon } from 'react-icons/md';
 import { IoSchool as SchoolIcon } from 'react-icons/io5';
-import { FaStar as StarIcon, FaRocket } from 'react-icons/fa';
+import { FaStar as StarIcon, FaRocket, FaExternalLinkAlt } from 'react-icons/fa';
 import './WorkExperience.css';
 import { TimelineItem } from '../types';
 import { getTimeline } from '../queries/getTimeline';
+import LogoCarousel from '../components/LogoCarousel';
 
 // Firecracker spark component
 const FirecrackerSpark: React.FC<{ progress: number }> = ({ progress }) => {
@@ -140,12 +141,12 @@ const WorkExperience: React.FC = () => {
       >
         <h1 className="experience-title">
           <FaRocket className="title-icon" />
-          My Journey
+          My Professional Journey
         </h1>
-        <p className="experience-subtitle">
-          From education to professional experience — tracing the path of growth
-        </p>
       </motion.div>
+
+      {/* Company Logos Carousel */}
+      <LogoCarousel />
 
       {/* Timeline Container */}
       <div className="timeline-wrapper">
@@ -185,18 +186,37 @@ const WorkExperience: React.FC = () => {
                 <div className="card-marker">
                   <WorkIcon />
                 </div>
-                <div className="card-content">
-                  <span className="card-date">{item.dateRange}</span>
-                  <h3 className="card-title">{item.title}</h3>
-                  <h4 className="card-company">{item.name}</h4>
-                  {item.techStack && (
-                    <div className="card-tech">
-                      {item.techStack.split(', ').slice(0, 5).map((tech, i) => (
-                        <span key={i} className="tech-tag">{tech}</span>
-                      ))}
+                <div className="card-inner">
+                  {item.logo && (
+                    <div className="card-logo-section">
+                      <img src={item.logo} alt={item.name} className="company-logo-large" />
                     </div>
                   )}
-                  <p className="card-description">{item.summaryPoints}</p>
+                  <div className="card-content">
+                    <div className="card-header">
+                      <span className="card-date">{item.dateRange}</span>
+                      {item.websiteUrl && (
+                        <a
+                          href={item.websiteUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="website-link"
+                        >
+                          <FaExternalLinkAlt /> Visit
+                        </a>
+                      )}
+                    </div>
+                    <h3 className="card-title">{item.title}</h3>
+                    <h4 className="card-company">{item.name}</h4>
+                    {item.techStack && (
+                      <div className="card-tech">
+                        {item.techStack.split(', ').slice(0, 5).map((tech, i) => (
+                          <span key={i} className="tech-tag">{tech}</span>
+                        ))}
+                      </div>
+                    )}
+                    <p className="card-description">{item.summaryPoints}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}
