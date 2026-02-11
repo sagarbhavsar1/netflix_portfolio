@@ -8,79 +8,149 @@ import { TimelineItem } from '../types';
 import { getTimeline } from '../queries/getTimeline';
 import LogoCarousel from '../components/LogoCarousel';
 
-// Firecracker spark component
-const FirecrackerSpark: React.FC<{ progress: number }> = ({ progress }) => {
+// Rocket Launcher component - flies down the timeline with fire trail
+const RocketLauncher: React.FC<{ progress: number }> = ({ progress }) => {
   return (
     <motion.div
-      className="firecracker-spark"
+      className="rocket-launcher"
       style={{ top: `${progress * 100}%` }}
       animate={{
-        scale: [1, 1.3, 1],
-        opacity: [1, 0.8, 1],
+        x: [0, -1, 1, -1, 0],
       }}
       transition={{
-        duration: 0.3,
+        duration: 0.15,
         repeat: Infinity,
         repeatType: "reverse"
       }}
     >
-      <div className="spark-core" />
-      <div className="spark-trail" />
-      {/* Spark particles */}
-      {[...Array(6)].map((_, i) => (
+      {/* Rocket Body */}
+      <div className="rocket-body">
+        <FaRocket className="rocket-icon" />
+      </div>
+
+      {/* Multi-layer Flame Exhaust */}
+      <div className="rocket-exhaust">
+        {/* Inner flame - hottest (yellow/white) */}
+        <motion.div
+          className="flame flame-inner"
+          animate={{
+            scaleY: [1, 1.3, 1],
+            scaleX: [1, 0.9, 1],
+            opacity: [1, 0.9, 1],
+          }}
+          transition={{
+            duration: 0.08,
+            repeat: Infinity,
+            repeatType: "reverse"
+          }}
+        />
+        {/* Middle flame (orange) */}
+        <motion.div
+          className="flame flame-middle"
+          animate={{
+            scaleY: [1, 1.4, 1.1],
+            scaleX: [1, 1.1, 0.95],
+            opacity: [0.9, 1, 0.9],
+          }}
+          transition={{
+            duration: 0.1,
+            repeat: Infinity,
+            repeatType: "reverse",
+            delay: 0.02
+          }}
+        />
+        {/* Outer flame (red) */}
+        <motion.div
+          className="flame flame-outer"
+          animate={{
+            scaleY: [1, 1.5, 1.2],
+            scaleX: [1, 1.2, 0.9],
+            opacity: [0.8, 0.9, 0.7],
+          }}
+          transition={{
+            duration: 0.12,
+            repeat: Infinity,
+            repeatType: "reverse",
+            delay: 0.04
+          }}
+        />
+      </div>
+
+      {/* Smoke/Spark Particles */}
+      {[...Array(8)].map((_, i) => (
         <motion.div
           key={i}
-          className="spark-particle"
+          className="rocket-spark"
+          style={{
+            left: `${50 + (Math.random() - 0.5) * 30}%`,
+          }}
           animate={{
-            x: [0, Math.cos((i * 60) * Math.PI / 180) * 12],
-            y: [0, Math.sin((i * 60) * Math.PI / 180) * 12],
+            y: [-10, -40 - Math.random() * 30],
+            x: [(Math.random() - 0.5) * 20, (Math.random() - 0.5) * 40],
             opacity: [1, 0],
             scale: [1, 0.3],
           }}
           transition={{
-            duration: 0.6,
+            duration: 0.4 + Math.random() * 0.3,
             repeat: Infinity,
-            delay: i * 0.08,
-          }}
-        />
-      ))}
-    </motion.div>
-  );
-};
-
-// Firecracker burst at end
-const FirecrackerBurst: React.FC<{ show: boolean }> = ({ show }) => {
-  if (!show) return null;
-
-  return (
-    <motion.div
-      className="firecracker-burst"
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      {[...Array(12)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="burst-particle"
-          style={{
-            background: ['#e50914', '#FFD700', '#FF6B6B', '#4ECDC4', '#FFFFFF'][i % 5],
-          }}
-          animate={{
-            x: [0, Math.cos((i * 30) * Math.PI / 180) * 60],
-            y: [0, Math.sin((i * 30) * Math.PI / 180) * 60],
-            opacity: [1, 0],
-            scale: [1, 0],
-          }}
-          transition={{
-            duration: 1.2,
-            repeat: Infinity,
-            repeatDelay: 2,
             delay: i * 0.05,
           }}
         />
       ))}
-      <StarIcon className="burst-star" />
+
+      {/* Glow effect */}
+      <div className="rocket-glow" />
+    </motion.div>
+  );
+};
+
+// Rocket Landing Burst at end
+const RocketLandingBurst: React.FC<{ show: boolean }> = ({ show }) => {
+  if (!show) return null;
+
+  return (
+    <motion.div
+      className="rocket-landing-burst"
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      {/* Explosion particles */}
+      {[...Array(16)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="landing-particle"
+          style={{
+            background: ['#e50914', '#FFD700', '#FF6B35', '#fff', '#4ECDC4'][i % 5],
+          }}
+          animate={{
+            x: [0, Math.cos((i * 22.5) * Math.PI / 180) * 80],
+            y: [0, Math.sin((i * 22.5) * Math.PI / 180) * 80],
+            opacity: [1, 0],
+            scale: [1, 0],
+          }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            repeatDelay: 2.5,
+            delay: i * 0.03,
+          }}
+        />
+      ))}
+      {/* Center star */}
+      <motion.div
+        className="landing-star"
+        animate={{
+          rotate: [0, 360],
+          scale: [1, 1.2, 1],
+        }}
+        transition={{
+          rotate: { duration: 4, repeat: Infinity, ease: "linear" },
+          scale: { duration: 1, repeat: Infinity, repeatType: "reverse" }
+        }}
+      >
+        <StarIcon />
+      </motion.div>
     </motion.div>
   );
 };
@@ -93,17 +163,18 @@ const WorkExperience: React.FC = () => {
     offset: ["start start", "end end"]
   });
 
-  const sparkProgress = useTransform(scrollYProgress, [0, 0.95], [0, 1]);
+  const rocketProgress = useTransform(scrollYProgress, [0, 0.95], [0, 1]);
   const [currentProgress, setCurrentProgress] = useState(0);
-  const [showBurst, setShowBurst] = useState(false);
+  const [showLanding, setShowLanding] = useState(false);
 
   useEffect(() => {
-    const unsubscribe = sparkProgress.on("change", (v) => {
+    const unsubscribe = rocketProgress.on("change", (v) => {
       setCurrentProgress(v);
-      if (v > 0.9) setShowBurst(true);
+      if (v > 0.9) setShowLanding(true);
+      else setShowLanding(false);
     });
     return () => unsubscribe();
-  }, [sparkProgress]);
+  }, [rocketProgress]);
 
   useEffect(() => {
     async function fetchTimelineItem() {
@@ -150,13 +221,13 @@ const WorkExperience: React.FC = () => {
 
       {/* Timeline Container */}
       <div className="timeline-wrapper">
-        {/* The Wire - animated timeline line */}
+        {/* The Fire Trail - animated timeline line */}
         <div className="timeline-wire">
           <motion.div
-            className="wire-progress"
+            className="wire-progress fire-trail"
             style={{ height: `${currentProgress * 100}%` }}
           />
-          <FirecrackerSpark progress={currentProgress} />
+          <RocketLauncher progress={currentProgress} />
         </div>
 
         {/* Timeline Items */}
@@ -259,16 +330,16 @@ const WorkExperience: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Firecracker Burst at End */}
+        {/* Rocket Landing Burst at End */}
         <div className="timeline-end">
-          <FirecrackerBurst show={showBurst} />
+          <RocketLandingBurst show={showLanding} />
           <motion.p
             className="journey-start-label"
             initial={{ opacity: 0 }}
-            animate={{ opacity: showBurst ? 1 : 0 }}
+            animate={{ opacity: showLanding ? 1 : 0 }}
             transition={{ delay: 0.5 }}
           >
-            Where it all began ✨
+            🚀 Journey Complete! ✨
           </motion.p>
         </div>
       </div>

@@ -1,6 +1,7 @@
-/* Experience Page - Netflix Premium with Firecracker Animation */
+/* Experience Page - Netflix Premium with Rocket Launch Animation */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+/* Force GPU acceleration for smooth animations */
 .experience-page {
   min-height: 100vh;
   padding: 40px;
@@ -9,6 +10,8 @@
   margin: 0 auto;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   position: relative;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 /* Loading State */
@@ -50,6 +53,19 @@
 .title-icon {
   color: #e50914;
   font-size: 2.2rem;
+  animation: rocketFloat 2s ease-in-out infinite;
+}
+
+@keyframes rocketFloat {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(-45deg);
+  }
 }
 
 .experience-subtitle {
@@ -77,113 +93,201 @@
   overflow: visible;
 }
 
-.wire-progress {
+/* Fire Trail - Enhanced Progress Bar */
+.wire-progress.fire-trail {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(180deg, #e50914 0%, #ff6b35 50%, #FFD700 100%);
+  background: linear-gradient(180deg,
+      #FFD700 0%,
+      #FF8C00 20%,
+      #FF6B35 40%,
+      #e50914 70%,
+      #b30710 100%);
   border-radius: 2px;
-  box-shadow: 0 0 12px rgba(229, 9, 20, 0.6);
-  transition: height 0.1s linear;
+  box-shadow:
+    0 0 8px #FF6B35,
+    0 0 16px rgba(255, 107, 53, 0.6),
+    0 0 24px rgba(229, 9, 20, 0.4);
+  transition: height 0.05s linear;
 }
 
-/* Firecracker Spark */
-.firecracker-spark {
+/* Animated glow flicker */
+.wire-progress.fire-trail::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 215, 0, 0.4) 0%, transparent 100%);
+  animation: fireFlicker 0.1s infinite alternate;
+}
+
+@keyframes fireFlicker {
+  0% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ROCKET LAUNCHER COMPONENT
+   ═══════════════════════════════════════════════════════════════════════════ */
+.rocket-launcher {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 80px;
   z-index: 10;
   pointer-events: none;
 }
 
-.spark-core {
+/* Rocket Body */
+.rocket-body {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 12px;
-  height: 12px;
-  background: radial-gradient(circle, #FFD700 0%, #FF6B35 50%, #e50914 100%);
-  border-radius: 50%;
-  box-shadow:
-    0 0 8px #FFD700,
-    0 0 16px #FF6B35,
-    0 0 24px rgba(229, 9, 20, 0.8);
-  animation: sparkPulse 0.2s infinite alternate;
-}
-
-@keyframes sparkPulse {
-  from {
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  to {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-}
-
-.spark-trail {
-  position: absolute;
-  top: -20px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
-  height: 20px;
-  background: linear-gradient(180deg, transparent, #FFD700);
-  opacity: 0.8;
+  z-index: 5;
 }
 
-.spark-particle {
+.rocket-icon {
+  font-size: 28px;
+  color: #e50914;
+  transform: rotate(180deg);
+  filter: drop-shadow(0 0 8px rgba(229, 9, 20, 0.8));
+  animation: rocketPulse 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes rocketPulse {
+  0% {
+    filter: drop-shadow(0 0 8px rgba(229, 9, 20, 0.8));
+  }
+
+  100% {
+    filter: drop-shadow(0 0 16px rgba(255, 107, 53, 1));
+  }
+}
+
+/* Rocket Exhaust Container */
+.rocket-exhaust {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 40px;
+  z-index: 3;
+}
+
+/* Multi-layer Flames */
+.flame {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform-origin: center bottom;
+}
+
+/* Inner flame - hottest (yellow/white core) */
+.flame-inner {
+  width: 8px;
+  height: 20px;
+  background: linear-gradient(180deg, #fff 0%, #FFD700 40%, #FF8C00 100%);
+  box-shadow: 0 0 10px #FFD700, 0 0 20px rgba(255, 215, 0, 0.8);
+  z-index: 3;
+}
+
+/* Middle flame (orange) */
+.flame-middle {
+  width: 14px;
+  height: 28px;
+  background: linear-gradient(180deg, #FFD700 0%, #FF6B35 50%, #e50914 100%);
+  box-shadow: 0 0 12px #FF6B35, 0 0 24px rgba(255, 107, 53, 0.6);
+  z-index: 2;
+}
+
+/* Outer flame (red) */
+.flame-outer {
+  width: 20px;
+  height: 36px;
+  background: linear-gradient(180deg, #FF6B35 0%, #e50914 60%, #8B0000 100%);
+  box-shadow: 0 0 16px rgba(229, 9, 20, 0.6), 0 0 32px rgba(229, 9, 20, 0.3);
+  z-index: 1;
+}
+
+/* Spark Particles */
+.rocket-spark {
+  position: absolute;
+  bottom: 5px;
   width: 4px;
   height: 4px;
   background: #FFD700;
   border-radius: 50%;
-  box-shadow: 0 0 4px #FFD700;
+  box-shadow: 0 0 6px #FFD700, 0 0 10px #FF6B35;
 }
 
-/* Firecracker Burst */
-.firecracker-burst {
+/* Glow Effect under rocket */
+.rocket-glow {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.6) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: glowPulse 0.2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.8;
+    transform: translateX(-50%) scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.2);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ROCKET LANDING BURST
+   ═══════════════════════════════════════════════════════════════════════════ */
+.rocket-landing-burst {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto;
 }
 
-.burst-particle {
+.landing-particle {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  box-shadow: 0 0 6px currentColor;
+  box-shadow: 0 0 8px currentColor;
 }
 
-.burst-star {
+.landing-star {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 28px;
+  font-size: 36px;
   color: #FFD700;
-  filter: drop-shadow(0 0 8px #FFD700);
-  animation: starSpin 3s linear infinite;
+  filter: drop-shadow(0 0 12px #FFD700);
 }
 
-@keyframes starSpin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
+.landing-star svg {
+  display: block;
 }
 
 /* Timeline Sections */
@@ -416,10 +520,11 @@
 }
 
 .journey-start-label {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #FFD700;
   margin-top: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
 /* Responsive Design */
@@ -478,22 +583,34 @@
   .card-title {
     font-size: 1.1rem;
   }
+
+  .rocket-icon {
+    font-size: 22px;
+  }
+
+  .rocket-exhaust {
+    transform: translateX(-50%) scale(0.8);
+  }
 }
 
 /* Accessibility - Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
 
-  .spark-core,
-  .burst-star,
-  .timeline-card,
-  .firecracker-spark,
-  .burst-particle {
-    animation: none;
-    transition: none;
+  .rocket-icon,
+  .rocket-glow,
+  .flame,
+  .rocket-spark,
+  .landing-particle,
+  .landing-star,
+  .wire-progress.fire-trail::before,
+  .timeline-card {
+    animation: none !important;
+    transition: none !important;
   }
 
-  .wire-progress {
-    transition: none;
+  .title-icon {
+    animation: none;
+    transform: rotate(-45deg);
   }
 }
 
