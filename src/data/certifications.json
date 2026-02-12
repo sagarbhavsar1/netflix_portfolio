@@ -4,7 +4,8 @@
         "issuer": "Palantir",
         "issuedDate": "2025",
         "link": "https://verify.skilljar.com/c/n8v8i9dsc7h4",
-        "iconName": "palantir"
+        "iconName": "palantir",
+        "logo": "/logos/certifications/palantir.png"
     },
     {
         "title": "Certified Ethical Hacker (CEH)",
@@ -18,42 +19,48 @@
         "issuer": "Google",
         "issuedDate": "2024",
         "link": "https://drive.google.com/file/d/1s17Q3gP1MAMuV2dMZ9Ejopa73LPL8T8I/view?usp=sharing",
-        "iconName": "google"
+        "iconName": "google",
+        "logo": "/logos/certifications/google.webp"
     },
     {
         "title": "BCG Data Science Virtual Internship",
         "issuer": "Boston Consulting Group",
         "issuedDate": "2023",
         "link": "https://drive.google.com/file/d/10Q_dgm6spWy2SgXdfpFimvlpk1NhYdLh/view?usp=sharing",
-        "iconName": "university"
+        "iconName": "university",
+        "logo": "/logos/certifications/bcg.png"
     },
     {
         "title": "HighRadius Data Science Program",
         "issuer": "HighRadius",
         "issuedDate": "2022",
         "link": "https://drive.google.com/file/d/1Zmtc-9Krb6SJ3zf5jPo7F8e9uCsSeZRX/view?usp=sharing",
-        "iconName": "university"
+        "iconName": "university",
+        "logo": "/logos/certifications/highradius.jpeg"
     },
     {
         "title": "ISRO Space Science Certificate",
         "issuer": "Indian Space Research Organisation",
         "issuedDate": "2021",
         "link": "https://drive.google.com/file/d/1eyW0d1jNBZ2MbtaI7PCxWRXZ7NgjVL3K/view?usp=sharing",
-        "iconName": "university"
+        "iconName": "university",
+        "logo": "/logos/certifications/isro.png"
     },
     {
         "title": "Graph Neural Networks Research Publication",
         "issuer": "IEEE ICECONF'23",
         "issuedDate": "2023",
         "link": "https://drive.google.com/file/d/1EPDfks4eui5p7mPrn_TaRtdqVax8z_w-/view?usp=sharing",
-        "iconName": "ieee"
+        "iconName": "ieee",
+        "logo": "/logos/certifications/ieee.jpg"
     },
     {
         "title": "AI Research Publication Certificate",
         "issuer": "IEEE",
         "issuedDate": "2023",
         "link": "https://drive.google.com/file/d/1-n0ntWtKTgiCY7NdRfWV6uxRqHi_yeT7/view?usp=sharing",
-        "iconName": "ieee"
+        "iconName": "ieee",
+        "logo": "/logos/certifications/ieee.jpg"
     },
     {
         "title": "Python Programming",
@@ -67,14 +74,16 @@
         "issuer": "SRM Institute",
         "issuedDate": "2020",
         "link": "https://drive.google.com/file/d/1E4qZCjTVVoKLh_nV-SWc8lK74aQzWUZ2/view?usp=sharing",
-        "iconName": "university"
+        "iconName": "university",
+        "logo": "/logos/certifications/c-logo.png"
     },
     {
         "title": "Data Workshop Certificate",
         "issuer": "SRM Institute",
         "issuedDate": "2021",
         "link": "https://drive.google.com/file/d/1zjLgF7QZ_7x3FEi9IzvkT798-1zH9MbZ/view?usp=sharing",
-        "iconName": "university"
+        "iconName": "university",
+        "logo": "/logos/certifications/srm.jpeg"
     },
     {
         "title": "Making Sense with Data Workshop",
@@ -88,7 +97,8 @@
         "issuer": "Cashfree Payments",
         "issuedDate": "2024",
         "link": "https://drive.google.com/file/d/1osc3ticyjhZiXzb4WWcZlFzFiYrT43zK/view?usp=sharing",
-        "iconName": "university"
+        "iconName": "university",
+        "logo": "/logos/certifications/easytransfer.png"
     },
     {
         "title": "Workshop Course Certificate",

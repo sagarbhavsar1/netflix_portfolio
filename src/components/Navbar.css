@@ -94,16 +94,47 @@
 
 /* Mobile-specific styling */
 @media (max-width: 768px) {
+  .navbar {
+    box-sizing: border-box;
+    padding: 12px 12px;
+  }
+
   .navbar-logo img {
     height: 20px;
+    margin-top: 0;
+    margin-left: 4px;
     margin-right: auto;
   }
 
-  .profile-icon {
-    width: 24px;
-    height: 24px;
+  .navbar-right {
+    gap: 8px;
+    align-items: center;
   }
 
+  .profile-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 0;
+    margin-left: 2px;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .social-icons {
+    gap: 10px;
+    margin-right: 0;
+  }
+
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 1.32rem;
+  }
 
   /* Hide Navbar Links in Mobile */
   .navbar-links {
@@ -112,15 +143,24 @@
 
   /* Show Hamburger Menu */
   .hamburger {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 12px;
+    gap: 4px;
     cursor: pointer;
+    flex-shrink: 0;
   }
 
   .hamburger div {
-    width: 25px;
+    width: 22px;
     height: 3px;
     background-color: #fff;
-    margin: 4px;
+    margin: 0;
+    border-radius: 2px;
     transition: 0.3s;
   }
 

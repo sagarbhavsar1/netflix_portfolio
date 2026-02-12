@@ -44,6 +44,7 @@ export interface Certification {
   issuedDate: string;
   link: string;
   iconName: string;
+  logo?: string;
 }
 
 export interface ContactMe {

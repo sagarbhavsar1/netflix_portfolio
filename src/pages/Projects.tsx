@@ -86,6 +86,32 @@ const techIcons: { [key: string]: JSX.Element } = {
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const githubProfileUrl = 'https://github.com/sagarbhavsar1';
+  const primaryStack = [
+    'Python',
+    'MySQL',
+    'Apache Spark',
+    'Java',
+    'R',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Snowflake',
+    'Google Cloud',
+    'Hugging Face',
+    'AWS',
+    'Azure',
+    'Palantir',
+    'Docker',
+    'BigQuery',
+    'Power BI',
+    'LangChain',
+    'LLMs',
+    'AI-native IDEs',
+    'AI Models',
+    'API Inference Models',
+    'Architecture',
+  ];
 
   useEffect(() => {
     async function fetchProjects() {
@@ -116,7 +142,63 @@ const Projects: React.FC = () => {
         transition={{ duration: 0.6 }}
       >
         <h1 className="projects-title">My Projects</h1>
+        <p className="projects-subtitle">Practical AI and data projects, built and launched quickly.</p>
       </motion.header>
+
+      <motion.section
+        className="projects-overview"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.55, delay: 0.12 }}
+      >
+        <div className="projects-overview-copy">
+          <span className="projects-overview-kicker">Build. Experiment. Ship.</span>
+          <h2 className="projects-overview-title">I iterate quickly on AI products and data-intensive systems.</h2>
+          <p className="projects-overview-text">
+            I turn ideas into production-ready projects with a strong focus on LLM applications, analytics workflows,
+            and full-stack execution. I constantly test new models, improve performance with rapid experiments, and
+            ship usable outcomes fast.
+          </p>
+          <a
+            href={githubProfileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="projects-github-cta"
+          >
+            <FaGithub />
+            <span className="projects-github-label">See all up-to-date repos on GitHub</span>
+            <span className="projects-github-arrow">↗</span>
+          </a>
+        </div>
+
+        <div className="projects-overview-meta">
+          <div className="projects-stats-grid">
+            <div className="projects-stat-card">
+              <span className="projects-stat-value">10+</span>
+              <span className="projects-stat-label">Projects Shipped</span>
+            </div>
+            <div className="projects-stat-card">
+              <span className="projects-stat-value">AI + Data</span>
+              <span className="projects-stat-label">Core Focus</span>
+            </div>
+            <div className="projects-stat-card">
+              <span className="projects-stat-value">Rapid, thoughtful, precise</span>
+              <span className="projects-stat-label">Iteration Style</span>
+            </div>
+          </div>
+
+          <div className="projects-tech-summary">
+            <p className="projects-tech-heading">Primary Stack</p>
+            <div className="projects-tech-pills">
+              {primaryStack.map((tech, index) => (
+                <span key={`${tech}-${index}`} className="projects-tech-pill">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </motion.section>
 
       {/* Bento Grid */}
       <div className="projects-grid">

@@ -13,6 +13,7 @@ const continueWatchingConfig = {
     { title: "Blogs", imgSrc: "/images/blogs.jpg", link: "/blogs" },
     { title: "Skills", imgSrc: "/images/skills-banner.jpeg", link: "/skills" },
     { title: "Experience", imgSrc: "/images/experience-banner.avif", link: "/work-experience" },
+    { title: "Extra Curricular", imgSrc: "/images/extra-table-tennis-card.jpg", link: "/extra-curricular" },
     { title: "Contact Me", imgSrc: "/images/contact-me.jpg", link: "/contact-me" }
   ],
   developer: [
@@ -24,6 +25,7 @@ const continueWatchingConfig = {
   friend: [
     { title: "Blogs", imgSrc: "/images/blogs.jpg", link: "/blogs" },
     { title: "Recommendations", imgSrc: "/images/recommendations.jpg", link: "/recommendations" },
+    { title: "Extra Curricular", imgSrc: "/images/extra-table-tennis-card.jpg", link: "/extra-curricular" },
     { title: "Contact Me", imgSrc: "/images/contact-me.jpg", link: "/contact-me" }
   ],
   adventure: [

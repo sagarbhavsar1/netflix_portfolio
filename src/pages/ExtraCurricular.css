@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+
+:root {
+  --extra-bg: #07090f;
+  --extra-surface: rgba(15, 18, 28, 0.9);
+  --extra-surface-strong: rgba(11, 14, 22, 0.95);
+  --extra-border: rgba(255, 255, 255, 0.1);
+  --extra-text: #f4f5f7;
+  --extra-text-soft: rgba(244, 245, 247, 0.74);
+}
+
+.extra-curricular-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 108px 28px 84px;
+  overflow: hidden;
+  background:
+    radial-gradient(900px circle at 90% -12%, rgba(229, 9, 20, 0.17) 0%, transparent 56%),
+    radial-gradient(760px circle at -12% 26%, rgba(255, 167, 118, 0.1) 0%, transparent 60%),
+    linear-gradient(180deg, #05070c 0%, var(--extra-bg) 44%, #0a0d14 100%);
+  color: var(--extra-text);
+}
+
+.extra-curricular-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 360 360' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.extra-curricular-ambient {
+  position: absolute;
+  inset: -24% 0 auto;
+  height: 70%;
+  background:
+    radial-gradient(460px circle at 14% 64%, rgba(229, 9, 20, 0.15), transparent 72%),
+    radial-gradient(380px circle at 78% 20%, rgba(255, 184, 125, 0.1), transparent 70%);
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+.extra-curricular-shell {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.extra-curricular-hero {
+  text-align: center;
+  margin: 0 auto 32px;
+  max-width: 860px;
+}
+
+.extra-curricular-kicker {
+  margin: 0 0 12px;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 228, 202, 0.92);
+}
+
+.extra-curricular-title {
+  margin: 0;
+  font-family: 'Sora', 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(2.1rem, 5vw, 3.9rem);
+  line-height: 1.03;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-shadow:
+    0 0 16px rgba(229, 9, 20, 0.28),
+    0 0 34px rgba(229, 9, 20, 0.16);
+}
+
+.extra-curricular-subtitle {
+  margin: 14px auto 0;
+  max-width: 70ch;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.65;
+  color: var(--extra-text-soft);
+}
+
+.extra-curricular-stage {
+  position: relative;
+  border-radius: 24px;
+  border: 1px solid var(--extra-border);
+  background: linear-gradient(145deg, var(--extra-surface), var(--extra-surface-strong));
+  box-shadow:
+    0 22px 44px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.extra-curricular-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.extra-curricular-progress span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #e50914, #ffb56a);
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.5);
+  transition: width 0.35s ease;
+}
+
+.extra-curricular-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: #ffe4d2;
+  font-size: 1.1rem;
+  background: color-mix(in srgb, var(--extra-accent, #e50914) 22%, transparent);
+  border: 1px solid color-mix(in srgb, var(--extra-accent, #e50914) 60%, rgba(255, 255, 255, 0.12));
+}
+
+.extra-curricular-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.extra-curricular-slide {
+  min-width: 100%;
+  position: relative;
+  min-height: clamp(500px, 65vh, 650px);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.extra-curricular-slide-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.86) saturate(1.1);
+}
+
+.extra-curricular-slide-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(110deg, rgba(4, 6, 12, 0.56) 0%, rgba(8, 11, 18, 0.24) 52%, rgba(8, 11, 18, 0.64) 100%),
+    radial-gradient(1200px circle at 16% 80%, rgba(229, 9, 20, 0.16), transparent 62%);
+}
+
+.extra-curricular-slide-content {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 32px 32px;
+  width: min(700px, calc(100% - 64px));
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(8, 10, 16, 0.08);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow:
+    0 20px 36px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  animation: extraCardEnter 0.55s ease both;
+}
+
+.extra-curricular-slide-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.extra-curricular-slide-content h2 {
+  margin: 14px 0 8px;
+  font-family: 'Sora', 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(1.25rem, 2.3vw, 2rem);
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+}
+
+.extra-curricular-slide-content p {
+  margin: 0;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.97rem;
+  line-height: 1.66;
+  color: rgba(244, 245, 247, 0.9);
+}
+
+.extra-curricular-slide-content ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+}
+
+.extra-curricular-slide-content li {
+  margin-bottom: 8px;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(244, 245, 247, 0.86);
+}
+
+.extra-curricular-slide-content li:last-child {
+  margin-bottom: 0;
+}
+
+.extra-curricular-mini-nav {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mini-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 11, 18, 0.72);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: border-color 0.24s ease, transform 0.24s ease, background 0.24s ease;
+}
+
+.mini-arrow:hover {
+  transform: translateY(-2px);
+  border-color: rgba(229, 9, 20, 0.65);
+  background: rgba(229, 9, 20, 0.2);
+}
+
+.mini-window {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  width: min(520px, calc(100vw - 180px));
+}
+
+.mini-slide {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  background: rgba(8, 11, 18, 0.72);
+  color: rgba(255, 255, 255, 0.84);
+  text-align: left;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: border-color 0.24s ease, background 0.24s ease, color 0.24s ease;
+}
+
+.mini-slide.active {
+  border-color: rgba(229, 9, 20, 0.72);
+  background: rgba(229, 9, 20, 0.22);
+  color: #fff;
+}
+
+.mini-relation {
+  display: block;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.76;
+}
+
+.mini-title {
+  display: block;
+  margin-top: 4px;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 760px) {
+  .extra-curricular-page {
+    padding: 94px 14px 62px;
+  }
+
+  .extra-curricular-stage {
+    border-radius: 18px;
+  }
+
+  .extra-curricular-slide {
+    min-height: 560px;
+  }
+
+  .extra-curricular-slide-content {
+    margin: auto 12px 56px;
+    width: calc(100% - 24px);
+    border-radius: 14px;
+    padding: 14px;
+  }
+
+  .extra-curricular-slide-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .extra-curricular-slide-content p {
+    font-size: 0.9rem;
+  }
+
+  .extra-curricular-slide-content li {
+    font-size: 0.84rem;
+  }
+
+  .slide-table-tennis .extra-curricular-slide-content {
+    margin: auto 12px 72px;
+    background: rgba(8, 10, 16, 0.01);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .extra-curricular-mini-nav {
+    right: 10px;
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .mini-window {
+    width: calc(100vw - 108px);
+    gap: 6px;
+  }
+
+  .mini-slide {
+    padding: 7px 8px;
+  }
+
+  .mini-relation {
+    font-size: 0.56rem;
+  }
+
+  .mini-title {
+    font-size: 0.66rem;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .extra-curricular-track,
+  .extra-curricular-slide-content,
+  .mini-arrow,
+  .mini-slide {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@keyframes extraCardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

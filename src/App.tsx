@@ -12,6 +12,7 @@ import Layout from './Layout';
 import Blogs from './pages/Blogs';
 import Certifications from './pages/Certifications';
 import FindYourFit from './pages/FindYourFit';
+import ExtraCurricular from './pages/ExtraCurricular';
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
       <Route path="/projects" element={<Layout><Projects /></Layout>} />
       <Route path="/contact-me" element={<Layout><ContactMe /></Layout>} />
       <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
+      <Route path="/extra-curricular" element={<Layout><ExtraCurricular /></Layout>} />
       <Route path="/certifications" element={<Layout><Certifications /></Layout>} />
       <Route path="/find-your-fit" element={<Layout><FindYourFit /></Layout>} />
     </Routes>
