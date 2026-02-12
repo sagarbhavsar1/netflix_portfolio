@@ -8,6 +8,7 @@ export interface ProfileBanner {
   };
   linkedinLink: string;
   profileSummary: string;
+  fullBio: string;
 }
 
 export interface WorkPermit {
@@ -24,6 +25,8 @@ export interface TimelineItem {
   techStack: string;
   summaryPoints: string[];
   dateRange: string;
+  logo?: string;
+  websiteUrl?: string;
 }
 
 export interface Project {
@@ -31,6 +34,8 @@ export interface Project {
   description: string;
   techUsed: string;
   image: { url: string };
+  link?: string;
+  dateRange?: string;
 }
 
 export interface Certification {
@@ -39,6 +44,7 @@ export interface Certification {
   issuedDate: string;
   link: string;
   iconName: string;
+  logo?: string;
 }
 
 export interface ContactMe {
@@ -52,7 +58,7 @@ export interface ContactMe {
   phoneNumber: string;
 }
 
-export interface Skill { 
+export interface Skill {
   name: string;
   category: string;
   description: string;

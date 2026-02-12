@@ -168,6 +168,12 @@
         "icon": "SiSnowflake"
     },
     {
+        "name": "Palantir Foundry",
+        "category": "Big Data & Analytics",
+        "description": "Data Integration Platform",
+        "icon": "SiPalantir"
+    },
+    {
         "name": "MySQL",
         "category": "Databases",
         "description": "Relational Database",
@@ -220,5 +226,65 @@
         "category": "Tools & Practices",
         "description": "Data Science Platform",
         "icon": "SiRobotframework"
+    },
+    {
+        "name": "Statistical Modeling",
+        "category": "Concepts & Methodologies",
+        "description": "Regression, Hypothesis Testing",
+        "icon": "FaChartLine"
+    },
+    {
+        "name": "A/B Testing",
+        "category": "Concepts & Methodologies",
+        "description": "Experimentation & Analysis",
+        "icon": "FaFlask"
+    },
+    {
+        "name": "ETL Pipelines",
+        "category": "Concepts & Methodologies",
+        "description": "Data Extraction & Transform",
+        "icon": "FaDatabase"
+    },
+    {
+        "name": "Data Warehousing",
+        "category": "Concepts & Methodologies",
+        "description": "Star Schema, OLAP",
+        "icon": "FaCubes"
+    },
+    {
+        "name": "Feature Engineering",
+        "category": "Concepts & Methodologies",
+        "description": "Data Preprocessing",
+        "icon": "FaCogs"
+    },
+    {
+        "name": "Model Deployment",
+        "category": "Concepts & Methodologies",
+        "description": "MLOps, CI/CD for ML",
+        "icon": "FaRocket"
+    },
+    {
+        "name": "Time Series Analysis",
+        "category": "Concepts & Methodologies",
+        "description": "ARIMA, Prophet, Forecasting",
+        "icon": "FaCalendarAlt"
+    },
+    {
+        "name": "NLP Techniques",
+        "category": "Concepts & Methodologies",
+        "description": "Tokenization, Embeddings, LLMs",
+        "icon": "FaComments"
+    },
+    {
+        "name": "Computer Vision",
+        "category": "Concepts & Methodologies",
+        "description": "Image Classification, CNNs",
+        "icon": "FaEye"
+    },
+    {
+        "name": "Recommender Systems",
+        "category": "Concepts & Methodologies",
+        "description": "Collaborative Filtering",
+        "icon": "FaLightbulb"
     }
 ]

@@ -1,153 +1,356 @@
-.contact-container {
-  padding: 100px 20px;
-  background-color: #141414;
-  color: #e6e6e6;
-  text-align: center;
-  animation: fadeIn 0.8s ease-in-out;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --contact-bg: #07090f;
+  --contact-surface: rgba(15, 19, 28, 0.88);
+  --contact-surface-strong: rgba(12, 15, 23, 0.95);
+  --contact-border: rgba(255, 255, 255, 0.1);
+  --contact-text: #f4f5f7;
+  --contact-soft: rgba(244, 245, 247, 0.74);
+  --contact-muted: rgba(244, 245, 247, 0.56);
+  --contact-red: #e50914;
 }
 
-.linkedin-badge-custom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #222;
-  border-radius: 8px;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  color: #e6e6e6;
-  max-width: 350px;
+.contact-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 106px 26px 84px;
+  overflow: hidden;
+  background:
+    radial-gradient(940px circle at 88% -12%, rgba(229, 9, 20, 0.18) 0%, transparent 56%),
+    radial-gradient(760px circle at -12% 34%, rgba(255, 173, 122, 0.1) 0%, transparent 60%),
+    linear-gradient(180deg, #05070c 0%, var(--contact-bg) 42%, #090d15 100%);
+  color: var(--contact-text);
+}
+
+.contact-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 380 380' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.contact-ambient {
+  position: absolute;
+  inset: -24% auto auto 0;
+  width: 100%;
+  height: 62%;
+  background:
+    radial-gradient(440px circle at 10% 72%, rgba(229, 9, 20, 0.2), transparent 72%),
+    radial-gradient(350px circle at 74% 18%, rgba(255, 173, 122, 0.13), transparent 72%);
+  filter: blur(18px);
+  pointer-events: none;
+  animation: contactFloat 12s ease-in-out infinite alternate;
+}
+
+.contact-shell {
+  position: relative;
+  z-index: 1;
+  max-width: 1260px;
   margin: 0 auto;
 }
 
-.badge-avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.contact-hero {
+  margin-bottom: 28px;
 }
 
-.badge-content {
-  text-align: left;
+.contact-hero-copy {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
 }
 
-.badge-name {
-  font-size: 1.1rem;
-  font-weight: bold;
+.contact-title {
   margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: clamp(2rem, 4.3vw, 3.7rem);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
   color: #fff;
+  text-shadow:
+    0 0 18px rgba(229, 9, 20, 0.34),
+    0 0 38px rgba(229, 9, 20, 0.2);
 }
 
-.badge-title {
-  font-size: 0.9rem;
-  margin: 0;
-  color: #aaa;
+.contact-grid {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 24px;
 }
 
-.badge-description {
-  font-size: 0.85rem;
-  margin: 5px 0;
-  color: #ccc;
+.contact-panel {
+  border-radius: 22px;
+  border: 1px solid var(--contact-border);
+  background: linear-gradient(145deg, var(--contact-surface), var(--contact-surface-strong));
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-.badge-company {
-  font-size: 0.85rem;
-  color: #888;
-}
-
-.badge-link {
-  display: inline-flex;
-  align-items: center;
-  background-color: #0077b5;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.badge-link:hover {
-  background-color: #005983;
-}
-
-.linkedin-icon {
-  margin-right: 5px;
-}
-
-.contact-header p {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin: 20px 0 30px;
-}
-
-.contact-details {
+.contact-panel-left {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  gap: 18px;
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #1e1e1e;
-  padding: 10px 20px;
-  border-radius: 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+.identity-block {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px 16px;
+  text-align: center;
 }
 
-.contact-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(214, 43, 43, 0.6);
+.profile-image-wrapper {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  padding: 0;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.36);
 }
 
-.contact-icon {
-  font-size: 1.5rem;
-  color: #d62b2b;
+.contact-profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  display: block;
 }
 
-.contact-link {
+.profile-name {
+  margin: 0;
+  font-family: 'Barlow Condensed', 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.95rem;
+  font-weight: 700;
   color: #fff;
-  font-size: 1.1rem;
-  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.01em;
 }
 
-.contact-link:hover {
-  text-decoration: underline;
+.profile-title {
+  margin: 8px 0 0;
+  color: rgba(255, 108, 108, 0.95);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
-.contact-fun {
-  margin-top: 30px;
-  font-size: 1.2rem;
+.profile-summary {
+  margin: 12px 0 0;
+  color: var(--contact-soft);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  color: #e6e6e6;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: rgba(255, 255, 255, 0.035);
+  color: rgba(247, 248, 250, 0.85);
+  transition: all 0.25s ease;
 }
 
-.coffee-icon {
-  font-size: 2rem;
-  color: #ff9900;
-  animation: swing 1s infinite ease-in-out;
+.social-btn svg {
+  font-size: 1.08rem;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.social-btn.linkedin:hover {
+  border-color: #0077b5;
+  background: rgba(0, 119, 181, 0.23);
+  color: #fff;
 }
 
-@keyframes swing {
-  0%, 100% {
-    transform: rotate(0deg);
+.social-btn.github:hover {
+  border-color: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.social-btn.email:hover {
+  border-color: rgba(229, 9, 20, 0.65);
+  background: rgba(229, 9, 20, 0.2);
+  color: #fff;
+}
+
+.contact-panel-right {
+  padding: 26px;
+}
+
+.form-header {
+  margin-bottom: 18px;
+}
+
+.form-header h2 {
+  margin: 0;
+  font-family: 'Barlow Condensed', 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(1.65rem, 2.5vw, 2.1rem);
+  line-height: 1.02;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.form-header p {
+  margin: 8px 0 0;
+  font-size: 0.93rem;
+  color: var(--contact-muted);
+  line-height: 1.55;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.77rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.76);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 12px;
+  background: rgba(7, 10, 16, 0.7);
+  color: #fff;
+  font-size: 0.93rem;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 13px 14px;
+  transition: all 0.24s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgba(229, 9, 20, 0.72);
+  background: rgba(229, 9, 20, 0.05);
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.16);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.submit-btn {
+  margin-top: 6px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 22px;
+  font-size: 0.91rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #e50914 0%, #b50711 100%);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 26px rgba(229, 9, 20, 0.34),
+    0 0 16px rgba(229, 9, 20, 0.2);
+}
+
+@media (max-width: 1080px) {
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
-  50% {
-    transform: rotate(30deg);
+
+  .contact-panel-left {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 760px) {
+  .contact-page {
+    padding: 92px 14px 64px;
+  }
+
+  .contact-panel-right,
+  .contact-panel-left {
+    padding: 16px;
+  }
+
+  .form-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-ambient,
+  .submit-btn,
+  .quick-action,
+  .social-btn {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@keyframes contactFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 16px, 0);
   }
 }

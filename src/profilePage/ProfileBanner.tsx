@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './ProfileBanner.css';
 import PlayButton from '../components/PlayButton';
 import MoreInfoButton from '../components/MoreInfoButton';
+import BioModal from '../components/BioModal';
 import { getProfileBanner } from '../queries/getProfileBanner';
 import { ProfileBanner as ProfileBannerType } from '../types';
 
 const ProfileBanner: React.FC = () => {
-
-
   const [bannerData, setBannerData] = useState<ProfileBannerType | null>(null);
+  const [isBioModalOpen, setIsBioModalOpen] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
@@ -24,23 +24,30 @@ const ProfileBanner: React.FC = () => {
     window.open(bannerData.resumeLink.url, '_blank');
   };
 
-  const handleLinkedinClick = () => { 
+  const handleLinkedinClick = () => {
     window.open(bannerData.linkedinLink, '_blank');
+  }
+
+  const handleLearnMoreClick = () => {
+    setIsBioModalOpen(true);
   }
 
   return (
     <div className="profile-banner">
       <div className="banner-content">
         <h1 className="banner-headline" id='headline'>{bannerData.headline}</h1>
-        <p className="banner-description">
-          {bannerData.profileSummary}
-        </p>
 
         <div className="banner-buttons">
           <PlayButton onClick={handlePlayClick} label="Resume" />
-          <MoreInfoButton onClick={handleLinkedinClick} label="Linkedin" />
+          <MoreInfoButton onClick={handleLearnMoreClick} label="More Info" />
         </div>
       </div>
+
+      <BioModal
+        isOpen={isBioModalOpen}
+        onClose={() => setIsBioModalOpen(false)}
+        bio={bannerData.fullBio}
+      />
     </div>
   );
 };

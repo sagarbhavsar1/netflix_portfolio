@@ -2,10 +2,11 @@
     "backgroundImage": {
         "url": "/images/FullSuit_BB.jpg"
     },
-    "headline": "👋🏽 Hi, I'm Sagar. I harness technology, AI, and data to craft impactful solutions and drive innovation in businesses. Here's everything about me!",
+    "headline": "👋 Hi, I'm Sagar. I harness data, AI, and systems to craft impactful solutions and drive innovation in businesses. Here's everything about me!",
     "resumeLink": {
         "url": "https://drive.google.com/file/d/1M3jCpJUfA_3dspY30rDDjak-_is8mveu/view?usp=sharing"
     },
     "linkedinLink": "https://www.linkedin.com/in/sagarbhavsar1/",
-    "profileSummary": "I believe in the power of data and technology to transform ideas into impactful solutions. My journey has been shaped by a love for problem-solving, analytics, and a knack for AI. I'm Sagar, a recent Master's graduate from NYU Stern and Courant, with a background in Computer Science and Information Systems. With over 2 years of experience building intelligent systems that bridge business and technology, with a focus on data science, AI, and full stack real-time analytics."
+    "profileSummary": "I believe in the power of data and technology to transform ideas into impactful solutions.",
+    "fullBio": "My journey with technology started with a simple question: how can data help solve problems? Over the years, that curiosity evolved into a career blending technical expertise with a passion for impact.\n\nI'm Sagar, a Master's graduate from NYU Stern and Courant with a background in Computer Science and Information Systems. With over 2 years of experience, I specialize in building intelligent systems that bridge business and technology, spanning data science, AI, machine learning, and full-stack real-time analytics.\n\nCurrently at Julius as a Data Scientist, I analyze large-scale labour market datasets and design clustering workflows on 2M+ datapoints using BigQuery, Vertex AI, and Python-based embedding methods. I also build dashboards on Looker Studio that surface emerging skills and industry trends.\n\nMy past work spans computer vision, deep learning, and financial NLP. I've architected chatbots, enhanced image-processing pipelines, developed predictive models for marketing campaigns, and built AI systems that turn raw data into strategic insights...across marketing analytics, financial services, and healthcare.\n\nOutside of work, I've competed in table tennis at the national level for over a decade. It's taught me focus, discipline, adaptability, and how to perform under pressure, lessons I carry both on the court and in my work.\n\nIf I had to summarize my professional trait in one word: Conscientious."
 }

@@ -1,9 +1,26 @@
+html {
+  scroll-behavior: auto;
+  scroll-padding-top: 80px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 body {
   margin: 0;
-  font-family: 'Netflix Sans',Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  font-family: 'Netflix Sans', Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #141414;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 code {

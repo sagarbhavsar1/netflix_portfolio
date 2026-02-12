@@ -1,0 +1,72 @@
+[
+    {
+        "title": "PDF to Podcast Converter (PDFcast)",
+        "description": "Developed a website that converts PDF documents into podcasts with 2 AI hosts discussing the content. Used open-source LLMs and text-to-speech models via Groq Cloud APIs. Implemented intelligent text chunking, PDF parsing, audio generation, and API rate limit handling. Deployed globally at zero running costs.",
+        "techUsed": "Python, JavaScript, Node.js, LLMs, NLP, Text-to-Speech, Full-Stack",
+        "image": {
+            "url": "/images/pdfcast-full.jpeg"
+        },
+        "link": "https://github.com/sagarbhavsar1/ai-podcast-generator_-Standard-TTS-",
+        "dateRange": "Mar 2025 - Apr 2025"
+    },
+    {
+        "title": "Domino's Pizza Brand Strategy Case Study",
+        "description": "NYU Stern Marketing Course project analyzing Domino's brand and marketing strategies. Showcased how the company leveraged innovative approaches and effective branding to become a global leader in pizza delivery and a dominant player in the fast-food industry.",
+        "techUsed": "Marketing Analytics, Brand Strategy, Case Study Research",
+        "image": {
+            "url": "/images/dominos.png"
+        },
+        "link": "https://drive.google.com/file/d/1LipW5HbCIj70L_WSCZEadz6zK-Pzpct9/view?usp=sharing",
+        "dateRange": "Sep 2024 - Dec 2024"
+    },
+    {
+        "title": "Cadillac CLCMRC Website Enhancement",
+        "description": "Contract-based project: Built a chatbot using Google Flan-T5 and ChromaDB handling 500+ daily queries. Developed a ResNet18 CNN model trained on 60K+ car images for image-to-text predictions in under 2 seconds. Deployed on AWS (EC2, S3, EFS), reducing model training time by 50%.",
+        "techUsed": "LLMs, CNN, TensorFlow, Django, AWS, ChromaDB, Computer Vision",
+        "image": {
+            "url": "/images/cadillac.jpg"
+        },
+        "link": "https://newcadillacdatabase.org/",
+        "dateRange": "May 2024 - Aug 2024"
+    },
+    {
+        "title": "Financial Advisor LLM System",
+        "description": "Built an AI-powered financial advisor using GPT-4 and open-source LLMs for real-time personalized financial advice. Integrated large-scale financial databases, implemented training pipelines, and created streaming pipelines for live financial news integration. Deployed with efficient inference for quick real-time responses.",
+        "techUsed": "AWS, LLMs, LangChain, LLMOps, NLP",
+        "image": {
+            "url": "/images/finllm.jpg"
+        },
+        "link": "https://drive.google.com/file/d/1UihqF7HpOaYcbRUrhrBEFZQidmmIVCIA/view?usp=sharing",
+        "dateRange": "Jul 2024 - Aug 2024"
+    },
+    {
+        "title": "Image Dehazing Using Deep Learning",
+        "description": "Research project: Built a novel methodology for dehazing single outdoor images using feature extraction techniques in Deep Learning with 3 added pre-processing steps. Achieved highest novel accuracy (high PSNR and SSIM values). Published in IEEE and presented at ICECONF-2023 Conference.",
+        "techUsed": "TensorFlow, Deep Learning, Computer Vision, Research",
+        "image": {
+            "url": "/images/imagedehazing.jpg"
+        },
+        "link": "https://ieeexplore.ieee.org/document/10083630",
+        "dateRange": "Jul 2022 - Nov 2022"
+    },
+    {
+        "title": "COVID-19 Cases Analysis of India",
+        "description": "Procured India-wide COVID-19 data from data.gov.in. Pre-processed CSV files using Python libraries, then analyzed and visualized the refined data to derive various inferences about the pandemic's spread across India.",
+        "techUsed": "Python, Pandas, Data Visualization, Data Analysis",
+        "image": {
+            "url": "/images/covid19.png"
+        },
+        "link": "https://github.com/sagarbhavsar1/Covid-19-Data-Analysis-Project",
+        "dateRange": "Nov 2021"
+    },
+    {
+        "title": "Online Blood Bank Management System",
+        "description": "Built an online blood bank management system to manage various blood bank operations effectively. Features a central repository for blood deposits with details. Simulates Blood Banks by keeping records of blood donors, depositories, and blood recipients.",
+        "techUsed": "Python, Tkinter, SQLite3",
+        "image": {
+            "url": "/images/bloodbank.jpg"
+        },
+        "link": "https://github.com/sagarbhavsar1/Blood-Bank-Management-System",
+        "dateRange": "2020"
+    }
+]

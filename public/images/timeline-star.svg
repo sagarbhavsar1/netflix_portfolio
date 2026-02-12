@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="starFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7CC"/>
+      <stop offset="46%" stop-color="#FFD863"/>
+      <stop offset="100%" stop-color="#F2A128"/>
+    </linearGradient>
+    <radialGradient id="starCore" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF1" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#FFE8A3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <path
+    d="M64 10L78.6 46L117 50.1L88.3 75.2L97 113L64 92.9L31 113L39.7 75.2L11 50.1L49.4 46L64 10Z"
+    fill="url(#starFill)"
+    stroke="#FDE9A5"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+
+  <circle cx="64" cy="58" r="23" fill="url(#starCore)"/>
+</svg>

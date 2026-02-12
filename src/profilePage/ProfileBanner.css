@@ -34,8 +34,13 @@
 }
 
 .banner-headline {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 600px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.02em;
 }
 
 .banner-description {
@@ -78,16 +83,23 @@
 @media (max-width: 768px) {
   .banner-content {
     max-width: 100%;
+    padding: 0;
+    margin-top: auto;
   }
+
   .profile-banner {
-    padding: 60px 20px;
-    align-items: center;
-    justify-content: center;
+    padding: 14px 20px 2px;
+    align-items: flex-end;
+    justify-content: flex-start;
   }
 
   .banner-headline {
-    font-size: 2rem;
-    margin-top: 10rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 14px;
+    max-width: 100%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 0.7);
   }
 
   .banner-description {
@@ -108,4 +120,3 @@
     font-size: 0.9rem;
   }
 }
-

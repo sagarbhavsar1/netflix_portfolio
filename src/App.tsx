@@ -9,11 +9,10 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import ContactMe from './pages/ContactMe';
 import Layout from './Layout';
-import Music from './pages/Music';
-import Reading from './pages/Reading';
 import Blogs from './pages/Blogs';
 import Certifications from './pages/Certifications';
 import FindYourFit from './pages/FindYourFit';
+import ExtraCurricular from './pages/ExtraCurricular';
 
 const App: React.FC = () => {
   return (
@@ -26,9 +25,8 @@ const App: React.FC = () => {
       <Route path="/skills" element={<Layout><Skills /></Layout>} />
       <Route path="/projects" element={<Layout><Projects /></Layout>} />
       <Route path="/contact-me" element={<Layout><ContactMe /></Layout>} />
-      <Route path="/music" element={<Layout><Music /></Layout>} />
-      <Route path="/reading" element={<Layout><Reading /></Layout>} />
       <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
+      <Route path="/extra-curricular" element={<Layout><ExtraCurricular /></Layout>} />
       <Route path="/certifications" element={<Layout><Certifications /></Layout>} />
       <Route path="/find-your-fit" element={<Layout><FindYourFit /></Layout>} />
     </Routes>
