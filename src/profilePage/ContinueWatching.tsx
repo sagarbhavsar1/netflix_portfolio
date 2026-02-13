@@ -40,7 +40,7 @@ const ContinueWatching: React.FC<ContinueWatchingProps> = ({ profile }) => {
 
   return (
     <div className="continue-watching-row">
-      <h2 className="row-title">Continue Watching{profile !== 'friend' ? ` for ${profile.charAt(0).toUpperCase() + profile.slice(1)}` : ''}</h2>
+      <h2 className="row-title">Continue Watching{profile !== 'friend' ? ` for ${{ recruiter: 'Recruiter', developer: 'Developer', adventure: 'Bot' }[profile] || profile.charAt(0).toUpperCase() + profile.slice(1)}` : ''}</h2>
       <div className="card-row">
         {continueWatching.map((pick, index) => (
           <Link to={pick.link} key={index} className="pick-card">

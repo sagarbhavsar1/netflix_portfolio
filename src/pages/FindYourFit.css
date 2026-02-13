@@ -92,6 +92,7 @@
 .job-description-input {
     width: 100%;
     min-height: 200px;
+    max-width: 100%;
     padding: 20px;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1rem;
@@ -101,6 +102,7 @@
     border-radius: 4px;
     color: #fff;
     resize: vertical;
+    box-sizing: border-box;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 

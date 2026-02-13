@@ -25,74 +25,84 @@ const playHoverTick = () => {
   if (!ctx) return;
 
   if (ctx.state === 'suspended') {
-    ctx.resume().catch(() => {});
+    ctx.resume().catch(() => { });
   }
 
   const now = ctx.currentTime;
   const outputGain = ctx.createGain();
-  outputGain.gain.setValueAtTime(0.82, now);
+  outputGain.gain.setValueAtTime(0.9, now);
   outputGain.connect(ctx.destination);
 
-  const mainOsc = ctx.createOscillator();
-  const mainFilter = ctx.createBiquadFilter();
-  const mainGain = ctx.createGain();
+  // --- Layer 1: Subtle body (minimal bass, just presence) ---
+  const bodyOsc = ctx.createOscillator();
+  const bodyGain = ctx.createGain();
+  const bodyFilter = ctx.createBiquadFilter();
 
-  mainOsc.type = 'sine';
-  mainOsc.frequency.setValueAtTime(540, now);
-  mainOsc.frequency.exponentialRampToValueAtTime(720, now + 0.05);
+  bodyOsc.type = 'sine';
+  bodyOsc.frequency.setValueAtTime(400, now);
+  bodyOsc.frequency.exponentialRampToValueAtTime(300, now + 0.02);
 
-  mainFilter.type = 'lowpass';
-  mainFilter.frequency.setValueAtTime(2400, now);
-  mainFilter.Q.setValueAtTime(0.7, now);
+  bodyFilter.type = 'lowpass';
+  bodyFilter.frequency.setValueAtTime(800, now);
+  bodyFilter.Q.setValueAtTime(0.5, now);
 
-  mainGain.gain.setValueAtTime(0.0001, now);
-  mainGain.gain.exponentialRampToValueAtTime(0.075, now + 0.004);
-  mainGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.09);
+  bodyGain.gain.setValueAtTime(0.0001, now);
+  bodyGain.gain.exponentialRampToValueAtTime(0.05, now + 0.002);
+  bodyGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.025);
 
-  const harmonyOsc = ctx.createOscillator();
-  const harmonyGain = ctx.createGain();
+  bodyOsc.connect(bodyFilter);
+  bodyFilter.connect(bodyGain);
+  bodyGain.connect(outputGain);
 
-  harmonyOsc.type = 'triangle';
-  harmonyOsc.frequency.setValueAtTime(810, now);
-  harmonyOsc.frequency.exponentialRampToValueAtTime(1040, now + 0.05);
+  // --- Layer 2: Dominant knock (the main "tock") ---
+  const knockOsc = ctx.createOscillator();
+  const knockGain = ctx.createGain();
+  const knockFilter = ctx.createBiquadFilter();
 
-  harmonyGain.gain.setValueAtTime(0.0001, now);
-  harmonyGain.gain.exponentialRampToValueAtTime(0.03, now + 0.004);
-  harmonyGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.075);
+  knockOsc.type = 'triangle';
+  knockOsc.frequency.setValueAtTime(1800, now);
+  knockOsc.frequency.exponentialRampToValueAtTime(800, now + 0.012);
 
-  const transientOsc = ctx.createOscillator();
-  const transientFilter = ctx.createBiquadFilter();
-  const transientGain = ctx.createGain();
+  knockFilter.type = 'bandpass';
+  knockFilter.frequency.setValueAtTime(1200, now);
+  knockFilter.Q.setValueAtTime(4.0, now);
 
-  transientOsc.type = 'square';
-  transientOsc.frequency.setValueAtTime(1800, now);
-  transientOsc.frequency.exponentialRampToValueAtTime(1300, now + 0.018);
+  knockGain.gain.setValueAtTime(0.0001, now);
+  knockGain.gain.exponentialRampToValueAtTime(0.14, now + 0.001);
+  knockGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.02);
 
-  transientFilter.type = 'bandpass';
-  transientFilter.frequency.setValueAtTime(1650, now);
-  transientFilter.Q.setValueAtTime(1.1, now);
+  knockOsc.connect(knockFilter);
+  knockFilter.connect(knockGain);
+  knockGain.connect(outputGain);
 
-  transientGain.gain.setValueAtTime(0.0001, now);
-  transientGain.gain.exponentialRampToValueAtTime(0.013, now + 0.0015);
-  transientGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.022);
+  // --- Layer 3: Bright click (sharp edge) ---
+  const clickOsc = ctx.createOscillator();
+  const clickGain = ctx.createGain();
+  const clickFilter = ctx.createBiquadFilter();
 
-  mainOsc.connect(mainFilter);
-  mainFilter.connect(mainGain);
-  mainGain.connect(outputGain);
+  clickOsc.type = 'square';
+  clickOsc.frequency.setValueAtTime(5500, now);
+  clickOsc.frequency.exponentialRampToValueAtTime(2500, now + 0.004);
 
-  harmonyOsc.connect(harmonyGain);
-  harmonyGain.connect(outputGain);
+  clickFilter.type = 'highpass';
+  clickFilter.frequency.setValueAtTime(2200, now);
+  clickFilter.Q.setValueAtTime(1.0, now);
 
-  transientOsc.connect(transientFilter);
-  transientFilter.connect(transientGain);
-  transientGain.connect(outputGain);
+  clickGain.gain.setValueAtTime(0.0001, now);
+  clickGain.gain.exponentialRampToValueAtTime(0.08, now + 0.0005);
+  clickGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.006);
 
-  mainOsc.start(now);
-  harmonyOsc.start(now);
-  transientOsc.start(now);
-  mainOsc.stop(now + 0.095);
-  harmonyOsc.stop(now + 0.08);
-  transientOsc.stop(now + 0.024);
+  clickOsc.connect(clickFilter);
+  clickFilter.connect(clickGain);
+  clickGain.connect(outputGain);
+
+  // --- Start & stop all layers ---
+  bodyOsc.start(now);
+  knockOsc.start(now);
+  clickOsc.start(now);
+  bodyOsc.stop(now + 0.03);
+  knockOsc.stop(now + 0.025);
+  clickOsc.stop(now + 0.008);
 };
 
 const ProfileCard: React.FC<ProfileCardProps> = ({ name, image, onClick }) => {
