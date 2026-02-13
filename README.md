@@ -128,4 +128,4 @@ netflix_portfolio/
 
 ## 📜 License
 
-MIT License — feel free to fork and customize for your own portfolio!
+MIT License
