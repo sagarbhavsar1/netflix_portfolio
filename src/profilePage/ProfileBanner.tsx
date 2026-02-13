@@ -21,7 +21,7 @@ const ProfileBanner: React.FC = () => {
   if (!bannerData) return <div>Loading...</div>;
 
   const handlePlayClick = () => {
-    const resumeUrl = process.env.REACT_APP_RESUME_URL || bannerData.resumeLink.url;
+    const resumeUrl = import.meta.env.REACT_APP_RESUME_URL || bannerData.resumeLink.url;
     window.open(resumeUrl, '_blank');
   };
 
