@@ -127,14 +127,15 @@
   display: block;
 }
 
-.profile-name {
+.identity-block .profile-name {
   margin: 0;
   font-family: 'Barlow Condensed', 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.95rem;
   font-weight: 700;
   color: #fff;
-  line-height: 1;
+  line-height: 1.08;
   letter-spacing: 0.01em;
+  padding-bottom: 0.08em;
 }
 
 .profile-title {

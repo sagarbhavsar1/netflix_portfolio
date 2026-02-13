@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
+import SmoothScroll from './components/SmoothScroll';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,6 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <Router>
     <ScrollToTop />
+    <SmoothScroll />
     <App />
   </Router>
 );
