@@ -10,16 +10,6 @@
         "dateRange": "Mar 2025 - Apr 2025"
     },
     {
-        "title": "Domino's Pizza Brand Strategy Case Study",
-        "description": "NYU Stern Marketing Course project analyzing Domino's brand and marketing strategies. Showcased how the company leveraged innovative approaches and effective branding to become a global leader in pizza delivery and a dominant player in the fast-food industry.",
-        "techUsed": "Marketing Analytics, Brand Strategy, Case Study Research",
-        "image": {
-            "url": "/images/dominos.png"
-        },
-        "link": "https://drive.google.com/file/d/1LipW5HbCIj70L_WSCZEadz6zK-Pzpct9/view?usp=sharing",
-        "dateRange": "Sep 2024 - Dec 2024"
-    },
-    {
         "title": "Cadillac CLCMRC Website Enhancement",
         "description": "Contract-based project: Built a chatbot using Google Flan-T5 and ChromaDB handling 500+ daily queries. Developed a ResNet18 CNN model trained on 60K+ car images for image-to-text predictions in under 2 seconds. Deployed on AWS (EC2, S3, EFS), reducing model training time by 50%.",
         "techUsed": "LLMs, CNN, TensorFlow, Django, AWS, ChromaDB, Computer Vision",
@@ -38,6 +28,16 @@
         },
         "link": "https://drive.google.com/file/d/1UihqF7HpOaYcbRUrhrBEFZQidmmIVCIA/view?usp=sharing",
         "dateRange": "Jul 2024 - Aug 2024"
+    },
+    {
+        "title": "Domino's Pizza Brand Strategy Case Study",
+        "description": "NYU Stern Marketing Course project analyzing Domino's brand and marketing strategies. Showcased how the company leveraged innovative approaches and effective branding to become a global leader in pizza delivery and a dominant player in the fast-food industry.",
+        "techUsed": "Marketing Analytics, Brand Strategy, Case Study Research",
+        "image": {
+            "url": "/images/dominos.png"
+        },
+        "link": "https://drive.google.com/file/d/1LipW5HbCIj70L_WSCZEadz6zK-Pzpct9/view?usp=sharing",
+        "dateRange": "Sep 2024 - Dec 2024"
     },
     {
         "title": "Image Dehazing Using Deep Learning",

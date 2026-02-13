@@ -5,6 +5,7 @@ import './ProfilePage.css';
 import ProfileBanner from './ProfileBanner';
 import TopPicksRow from './TopPicksRow';
 import ContinueWatching from './ContinueWatching';
+import ProfileFooter from './ProfileFooter';
 type ProfileType = 'recruiter' | 'developer' | 'friend' | 'adventure';
 
 const ProfilePage: React.FC = () => {
@@ -37,6 +38,7 @@ const ProfilePage: React.FC = () => {
       </div>
       <TopPicksRow profile={profile} />
       <ContinueWatching profile={profile} />
+      <ProfileFooter />
     </>
   );
 };

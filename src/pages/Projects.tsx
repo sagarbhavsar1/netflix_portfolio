@@ -142,7 +142,6 @@ const Projects: React.FC = () => {
         transition={{ duration: 0.6 }}
       >
         <h1 className="projects-title">My Projects</h1>
-        <p className="projects-subtitle">Practical AI and data projects, built and launched quickly.</p>
       </motion.header>
 
       <motion.section
