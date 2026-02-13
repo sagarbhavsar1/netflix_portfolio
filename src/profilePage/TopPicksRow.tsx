@@ -50,7 +50,7 @@ const TopPicksRow: React.FC<TopPicksRowProps> = ({ profile }) => {
 
   return (
     <div className="top-picks-row">
-      <h2 className="row-title">Today's Top Picks{profile !== 'friend' ? ` for ${profile.charAt(0).toUpperCase() + profile.slice(1)}` : ''}</h2>
+      <h2 className="row-title">Today's Top Picks{profile !== 'friend' ? ` for ${{ recruiter: 'Recruiter', developer: 'Developer', adventure: 'Bot' }[profile] || profile.charAt(0).toUpperCase() + profile.slice(1)}` : ''}</h2>
       <div className="card-row">
         {topPicks.map((pick, index) => (
           <div

@@ -1,9 +1,12 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+const { readFileSync } = require('fs');
+const { join } = require('path');
 
-// Import Sagar's complete profile - this will be bundled at build time
-import sagarProfile from '../src/data/sagarProfile.json';
+// Load Sagar's complete profile at runtime
+const sagarProfile = JSON.parse(
+    readFileSync(join(__dirname, '..', 'src', 'data', 'sagarProfile.json'), 'utf-8')
+);
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+module.exports = async function handler(req, res) {
     // Only allow POST requests
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
@@ -96,11 +99,11 @@ Be specific. Reference actual numbers, project names, tools, and achievements fr
         console.error('Error calling Groq API:', error);
         return res.status(500).json({ error: 'Failed to process request' });
     }
-}
+};
 
 // Helper function to build a comprehensive profile context string
-function buildProfileContext(profile: typeof sagarProfile): string {
-    const sections: string[] = [];
+function buildProfileContext(profile) {
+    const sections = [];
 
     // Basic Info
     sections.push(`**Name:** ${profile.name}
