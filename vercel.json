@@ -1,5 +1,5 @@
 {
-    "framework": "build",
+    "outputDirectory": "build",
     "rewrites": [
         {
             "source": "/api/(.*)",
